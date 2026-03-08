@@ -1061,15 +1061,15 @@ button {
 }
 
 .checkbox--unchecked::after {
-  content: url("../../../img/icons/checkboxes/unchecked.svg");
+  content: url("../../img/icons/checkboxes/unchecked.svg");
 }
 
 .checkbox--checked::after {
-  content: url("../../../img/icons/checkboxes/checked.svg");
+  content: url("../../img/icons/checkboxes/checked.svg");
 }
 
 .checkbox--disabled::after {
-  content: url("../../../img/icons/checkboxes/disabled.svg");
+  content: url("../../img/icons/checkboxes/disabled.svg");
 }
 
 .step {
