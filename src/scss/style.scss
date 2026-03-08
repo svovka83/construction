@@ -1,0 +1,114 @@
+@use "settings/fonts";
+@use "settings/reset";
+@use "settings/variables" as *;
+@use "settings/templates";
+@import "settings/base-settings.scss";
+
+// elements components
+@import "components/elements/title.scss";
+@import "components/elements/subtext.scss";
+@import "components/elements/title-block.scss";
+@import "components/elements/buttons.scss";
+@import "components/elements/nav-buttons.scss";
+@import "components/elements/mode-btn.scss";
+@import "components/elements/input-block.scss";
+@import "components/elements/icon-box.scss";
+@import "components/elements/service-item.scss";
+@import "components/elements/portfolio-card.scss";
+@import "components/elements/testimonials-slide.scss";
+@import "components/elements/figure.scss";
+@import "components/elements/post-card.scss";
+@import "components/elements/checkbox.scss";
+@import "components/elements/step.scss";
+@import "components/elements/table-row.scss";
+@import "components/elements/tab.scss";
+@import "components/elements/statistic.scss";
+@import "components/elements/team-card.scss";
+@import "components/elements/socials.scss";
+@import "components/elements/vacancy-card.scss";
+@import "components/elements/tab-news.scss";
+@import "components/elements/meta.scss";
+@import "components/elements/socials-few.scss";
+@import "components/elements/comment.scss";
+@import "components/elements/textarea-block.scss";
+@import "components/elements/radio-button.scss";
+@import "components/elements/contact-box.scss";
+@import "components/elements/file-block.scss";
+
+// sections components
+@import "components/sections/header.scss";
+@import "components/sections/values-benefits.scss";
+@import "components/sections/portfolio.scss";
+@import "components/sections/clients-icons.scss";
+@import "components/sections/testimonials.scss";
+@import "components/sections/figures-block.scss";
+@import "components/sections/application.scss";
+@import "components/sections/footer.scss";
+@import "components/sections/top.scss";
+@import "components/sections/construction.scss";
+@import "components/sections/pricing.scss";
+@import "components/sections/modal.scss";
+
+// pages sections
+
+// homepage
+@import "pages-sections/homepage/hero-slider.scss";
+@import "pages-sections/homepage/video.scss";
+@import "pages-sections/homepage/services.scss";
+@import "pages-sections/homepage/request-form.scss";
+@import "pages-sections/homepage/clients-testimonials.scss";
+@import "pages-sections/homepage/figure-news.scss";
+@import "pages-sections/homepage/news.scss";
+
+// services
+
+@import "pages-sections/services_v1/constructions.scss";
+
+// services_v2
+
+@import "pages-sections/services_v2/offers.scss";
+@import "pages-sections/services_v2/steps.scss";
+@import "pages-sections/services_v2/pricing-clients.scss";
+
+// portfolio
+
+@import "pages-sections/portfolio/tabs.scss";
+@import "pages-sections/portfolio/portfolio-grid.scss";
+@import "pages-sections/portfolio/testimonials-portfolio.scss";
+@import "pages-sections/portfolio/clients-portfolio.scss";
+
+// project_v2
+
+@import "pages-sections/project_v1/gallery.scss";
+@import "pages-sections/project_v1/about.scss";
+@import "pages-sections/project_v1/constructive-decisions.scss";
+
+// about us
+
+@import "pages-sections/about-us/statistics.scss";
+@import "pages-sections/about-us/ceo-quotation.scss";
+@import "pages-sections/about-us/history-slider.scss";
+@import "pages-sections/about-us/clients-team.scss";
+@import "pages-sections/about-us/map.scss";
+
+// available positions
+
+@import "pages-sections/available-positions/vacancies-cta-benefits.scss";
+
+// news
+
+@import "pages-sections/news-page/filters-news-grid.scss";
+
+// single-post
+
+@import "pages-sections/single-post/single-post-top.scss";
+@import "pages-sections/single-post/single-post-article.scss";
+@import "pages-sections/single-post/comments.scss";
+@import "pages-sections/single-post/comment-form.scss";
+
+// contacts
+
+@import "pages-sections/contacts/contact-form.scss";
+@import "pages-sections/contacts/contacts.scss";
+
+// modal

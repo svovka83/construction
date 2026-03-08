@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "Services"
+	})
+	<body>
+		<!-- header -->
+		<header class="header" id="to-top">@@include("components/sections/_header.html")</header>
+
+		<main>
+			<!-- top of page -->
+			<section class="top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a href="./" class="top__navigation-natural">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a href="./service_v2.html" class="top__navigation-pale">Services</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+									"title": "SERVICES",
+									"classNameTitle": "title--top"
+								})
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+									"subtext": "If you are looking for a full-service construction company, look to Createx Construction Bureau. We are doing our best to be a partner for all of your construction needs.",
+									"classNameSubtext": "subtext--top"
+								})
+					</div>
+				</div>
+				<img class="top__bg" src="./img/pictures/top-bg/services-bg.png" alt="background of top" />
+			</section>
+			<section class="constructions">
+				<div class="container constructions__inner">
+					<!-- construction -->
+					<!-- prettier-ignore -->
+					@@include("./components/sections/_construction.html", {
+						"path": "./img/pictures/constructions/construction-1.jpg",
+						"title": "Construction",
+						"classTitle": "title--h2 title--mb-24",
+						"subtext": "Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu, scelerisque nisi, nibh. Enim semper id sodales ultricies sed ut ut augue. Mattis habitant venenatis, gravida posuere massa ac interdum. Eget aliquam dignissim ut vestibulum.",
+						"classSubtext": "subtext--base subtext--mb-48"
+					})
+					@@include("./components/sections/_construction.html", {
+						"path": "./img/pictures/constructions/construction-2.jpg",
+						"title": "Project Development",
+						"classTitle": "title--h2 title--mb-24",
+						"subtext": "Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget. ",
+						"classSubtext": "subtext--base subtext--mb-48",
+						"classConstruction": "construction--reverse"
+					})
+					@@include("./components/sections/_construction.html", {
+						"path": "./img/pictures/constructions/construction-3.jpg",
+						"title": "Interior Design",
+						"classTitle": "title--h2 title--mb-24",
+						"subtext": "Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget elementum pretium.",
+						"classSubtext": "subtext--base subtext--mb-48"
+					})
+					@@include("./components/sections/_construction.html", {
+						"path": "./img/pictures/constructions/construction-4.jpg",
+						"title": "Repairs",
+						"classTitle": "title--h2 title--mb-24",
+						"subtext": "Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci. Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna.",
+						"classSubtext": "subtext--base subtext--mb-48",
+						"classConstruction": "construction--reverse"
+					})
+				</div>
+				<img
+					class="constructions__bg1"
+					src="./img/pictures/constructions-bg1.png"
+					alt="constructions backgroung" />
+				<img
+					class="constructions__bg2"
+					src="./img/pictures/constructions-bg2.png"
+					alt="constructions backgroung" />
+			</section>
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

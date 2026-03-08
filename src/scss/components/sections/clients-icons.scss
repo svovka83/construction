@@ -1,0 +1,18 @@
+.clients__icons-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 60px;
+	&--margin-top-40 {
+		margin-top: 40px;
+	}
+	@media (max-width: 1024px) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		row-gap: 30px;
+	}
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

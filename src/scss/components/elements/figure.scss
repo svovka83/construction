@@ -1,0 +1,11 @@
+.figures__item {
+	.figures__img {
+		margin-bottom: 18px;
+	}
+	.figures__text {
+		@extend %tmpUbuntu-400;
+		font-size: 14px;
+		line-height: 150%;
+		color: $gray-900;
+	}
+}

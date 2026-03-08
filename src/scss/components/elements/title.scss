@@ -1,0 +1,85 @@
+.title {
+	@extend %tmpUbuntu-700;
+	color: $gray-900;
+	&--top {
+		font-size: 72px;
+		line-height: 130%;
+		letter-spacing: 1px;
+		margin-bottom: 24px;
+		@media (max-width: 768px) {
+			font-size: 48px;
+		}
+	}
+	&--top-2 {
+		font-size: 64px;
+		line-height: 120%;
+		letter-spacing: 1px;
+		margin-bottom: 24px;
+		@media (max-width: 768px) {
+			font-size: 42px;
+		}
+	}
+	&--h1 {
+		font-size: 46px;
+		line-height: 130%;
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
+	}
+	&--h2 {
+		font-size: 32px;
+		line-height: 150%;
+		@media (max-width: 768px) {
+			font-size: 24px;
+		}
+	}
+	&--h3 {
+		font-size: 28px;
+		line-height: 150%;
+		@media (max-width: 768px) {
+			font-size: 22px;
+		}
+	}
+	&--h4 {
+		font-size: 24px;
+		line-height: 150%;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	&--h5 {
+		font-size: 20px;
+		line-height: 150%;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	&--h6 {
+		font-size: 16px;
+		line-height: 150%;
+	}
+	&--white {
+		color: $white;
+	}
+	&--spacing-1 {
+		letter-spacing: 1px;
+	}
+	&--uppercase {
+		text-transform: uppercase;
+	}
+	&--mb-8 {
+		margin-bottom: 8px;
+	}
+	&--mb-24 {
+		margin-bottom: 24px;
+	}
+	&--mb-40 {
+		margin-bottom: 40px;
+	}
+	&--mb-60 {
+		margin-bottom: 60px;
+	}
+	&--w705 {
+		max-width: 705px;
+	}
+}

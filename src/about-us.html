@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "About Us"
+	})
+	<body>
+		<!-- header -->
+		<header class="header" id="to-top">@@include("components/sections/_header.html")</header>
+
+		<main>
+			<!-- top of page -->
+			<section class="top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a href="./" class="top__navigation-natural">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a href="./available-positions.html" class="top__navigation-pale">About Us</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+									"title": "ABOUT US",
+									"classNameTitle": "title--top"
+								})
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+									"subtext": "Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service.",
+									"classNameSubtext": "subtext--top"
+								})
+					</div>
+				</div>
+				<img class="top__bg" src="./img/pictures/top-bg/about-us-bg-back.png" alt="background of top" />
+				<img class="top__bg" src="./img/pictures/top-bg/aboute-us-bg-forw.png" alt="background of top" />
+			</section>
+			<!-- statistics -->
+			<div class="statistics container">
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_statistic.html", {
+					"svgId": "#ic-like",
+					"rate": "60%",
+					"text": "Clients on the recommendation of friends"
+				})
+				@@include("./components/elements/_statistic.html", {
+					"svgId": "#ic-panting",
+					"rate": "2400+",
+					"text": "Apartments renovated"
+				})
+				@@include("./components/elements/_statistic.html", {
+					"svgId": "#ic-helmet",
+					"rate": "670",
+					"text": "Qualified specialists"
+				})
+				@@include("./components/elements/_statistic.html", {
+					"svgId": "#ic-pantone",
+					"rate": "150000+ m",
+					"classRate": "statistic__rate--square",
+					"text": "Finishing work was carried out"
+				})
+			</div>
+			<!-- CEO quotation -->
+			<div class="ceo-quotation">
+				<div class="container ceo-quotation__inner">
+					<img
+						class="ceo-quotation__img"
+						src="./img/pictures/ceo-quotation-img.jpg"
+						alt="ceo quotation image" />
+					<div class="ceo-quotation__content">
+						<svg class="ceo-quotation__icon">
+							<use xlink:href="./img/sprites/quote.svg#ic-quote"></use>
+						</svg>
+						<div class="ceo-quotation__content-inner">
+							<p class="ceo-quotation__text">
+								Dapibus nec vitae ante mattis. Aliquam phasellus ac dui augue in. Sed aliquet in egestas
+								hac at proin sed quam. Etiam aliquet sagittis non, massa cum pulvinar. Et in leo, tempus
+								purus vestibulum ut blandit et mi. Odio massa purus vel praesent arcu enim elit felis
+								viverra. <br /><br />
+								Magna aliquam interdum mattis ipsum arcu. Elit odio elit viverra quis metus amet
+								eleifend amet. Vet suspendisse faucibus tempor ipsum integer.
+							</p>
+							<div class="ceo-quotation__content-bottom">
+								<div class="ceo-quotation__content-bottom-left">
+									<h5 class="ceo-quotation__content-name">Courtney Alexander</h5>
+									<p class="ceo-quotation__content-position">CEO - Createx Construction Bureau</p>
+								</div>
+								<img
+									class="ceo-quotation__content-signature"
+									src="./img/icons/signature.svg"
+									alt="signature" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<img
+					class="ceo-quotation__bg"
+					src="./img/pictures/ceo-quotation-bg.png"
+					alt="ceo quotation background" />
+			</div>
+			<!-- values-history -->
+			<div class="values-history">
+				<!-- values-benefits -->
+				<section class="values-benefits container">
+					<!-- title block -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_title-block.html", {
+						"title": "Our core values",
+						"subtext": "Our mission is to set the highest standards for construction sphere."
+					})
+					<div class="icon-boxes">
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Quality",
+							"text": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+							"classTitle": "icon-box__title--dark",
+							"svgId": "#ic-like"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Safety",
+							"text": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.",
+							"classTitle": "icon-box__title--dark",
+							"svgId": "#ic-hand"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Comfort",
+							"text": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.",
+							"classTitle": "icon-box__title--dark",
+							"svgId": "#ic-slippers"
+						})
+					</div>
+				</section>
+				<!-- history -->
+				<section class="portfolio portfolio--extratop-padding portfolio--extrabottom-padding container">
+					<div class="potrfolio__top">
+						<!-- title h1 -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+							"title": "Our history",
+							"classNameTitle": "title title--h1 title--w705"
+						})
+						<!-- nav buttons -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_nav-buttons.html", {
+							"classLeft": "nav-button nav-button--left nav-button--transperant history-button-prev",
+							"classRight": "nav-button nav-button--right nav-button--transperant history-button-next"
+						})
+					</div>
+					<div class="history-slider-block">
+						<div class="text-slider-history">
+							<div class="swiper-wrapper text-slider-history__text">
+								<div class="swiper-slide">
+									<span class="slider-circle"></span><span class="slider-circle-text">Present</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span
+									><span class="slider-circle-text">March 2019</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span
+									><span class="slider-circle-text">November 2018</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span><span class="slider-circle-text">July 2015</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span
+									><span class="slider-circle-text">August 2010</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span
+									><span class="slider-circle-text">February 2007</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span><span class="slider-circle-text">May 2004</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span
+									><span class="slider-circle-text">October 2001</span>
+								</div>
+								<div class="swiper-slide">
+									<span class="slider-circle"></span><span class="slider-circle-text">June 2000</span>
+								</div>
+							</div>
+						</div>
+						<div class="image-slider-history">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<img
+										class="image-slider-history__img"
+										src="./img/pictures/history-crane.jpg"
+										alt="history slider image" />
+									<p class="image-slider-history__text">
+										Bcelerisque dapibus pharetra nibh semper iaculis duis viverra porttitor in. Eu
+										nec vitae, malesuada vitae egestas integer et morbi. Maecenas sed quis diam
+										posuere malesuada magnis. Bcelerisque dapibus. Eu nec vitae,
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<!-- clients-team -->
+			<div class="clients-team">
+				<!-- clients -->
+				<section class="clients container">
+					<!-- title block -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_title-block.html", {
+						"title": "Our partners",
+						"subtext": "We are supported by 12+ industry bodies and media partners"
+					})
+					<div class="clients__icons-block">
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-1.svg" alt="icon 1" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-2.svg" alt="icon 2" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-3.svg" alt="icon 3" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-4.svg" alt="icon 4" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-5.svg" alt="icon 5" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-6.svg" alt="icon 6" />
+					</div>
+					<div class="clients__icons-block clients__icons-block--margin-top-40">
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-7.svg" alt="icon 7" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-8.svg" alt="icon 8" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-9.svg" alt="icon 9" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-10.svg" alt="icon 10" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-11.svg" alt="icon 11" />
+						<img class="clients__icon" src="./img/icons/clients-icons/client-logo-12.svg" alt="icon 12" />
+					</div>
+				</section>
+				<!-- team -->
+				<section class="team container">
+					<!-- title block -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_title-block.html", {
+						"title": "Our team",
+						"subtext": "People are at the heart of Createx Construction Bureau"
+					})
+					<div class="team__cards-block">
+						<!-- prettier-ignore -->
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-1.jpg",
+							"name": "Courtney Alexander",
+							"position": "CEO, Co-Founder"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-2.jpg",
+							"name": "Calvin Fox",
+							"position": "CTO, Co-Founder"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-3.jpg",
+							"name": "Johnny Lane",
+							"position": "Johnny Lane"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-4.jpg",
+							"name": "Diane Mccoy",
+							"position": "Director of Human Resources"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-5.jpg",
+							"name": "Judith Warren",
+							"position": "Lead Accountant"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-6.jpg",
+							"name": "Floyd Simmmons",
+							"position": "Finacial Director"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-7.jpg",
+							"name": "Serenity Edwards",
+							"position": "Director of Marketing"
+						})
+						@@include("components/elements/_team-card.html", {
+							"imgPath": "./img/pictures/team/team-member-8.jpg",
+							"name": "Shawn Edwards",
+							"position": "Tech Lead"
+						})
+					</div>
+					<p class="team__positions">
+						Become a part of the best team in the construction market of the USA.
+						<a class="team__positions-link" href="#!">Available Positions</a>
+					</p>
+				</section>
+				<img class="clients-team__bg" src="./img/pictures/backgrounds/team-bg.png" alt="clients team image" />
+			</div>
+			<!-- map -->
+			<div class="map">
+				<section class="container">
+					<!-- title h1 -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "We work worldwide",
+						"classNameTitle": "title title--h1"
+					})
+					<img class="map__img" src="./img/pictures/map.png" alt="map image" />
+				</section>
+			</div>
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

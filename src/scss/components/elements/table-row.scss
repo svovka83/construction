@@ -1,0 +1,36 @@
+.table__row {
+	height: 58px;
+	@extend %tmpUbuntu-400-regular;
+	color: $gray-800;
+	&--white {
+		background-color: $white;
+	}
+	&--gray {
+		background-color: $gray-200;
+	}
+	.table__row-title {
+		text-align: start;
+		padding-left: 24px;
+	}
+	.table__row-data {
+		width: 245px;
+		padding-top: 16px;
+		@media (max-width: 1120px) {
+			width: 180px;
+		}
+		@media (max-width: 950px) {
+			width: 150px;
+		}
+	}
+}
+
+.table-mark {
+	width: 22px;
+	height: 22px;
+	fill: $primary;
+}
+.table-mark-none {
+	display: none;
+	width: 0px;
+	height: 0px;
+}

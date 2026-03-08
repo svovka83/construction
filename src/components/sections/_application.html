@@ -1,0 +1,72 @@
+<section class="application">
+	<div class="container">
+		<form class="application__form" action="#!">
+			<!-- title h3 -->
+			<!-- prettier-ignore -->
+			@@include("../../components/elements/_title.html", {
+        "title": "A quick way to discuss details",
+        "classNameTitle": "title title--h3"
+      })
+			<div class="application__form-inner">
+				<!-- input -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_input-block.html", {
+        "classBlock": "input-block input-block--small",
+        "label": "Name*",
+        "classId": "name-app",
+        "classInput": "input input--small",
+        "placeholder": "Your name",
+        "classTextSuccess": "text-success",
+        "textSuccess": "Here is noothing. Opps."
+      })
+				<!-- input -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_input-block.html", {
+        "classBlock": "input-block input-block--small",
+        "label": "Phone*",
+        "classId": "phone-app",
+        "classInput": "input input--small",
+        "placeholder": "Your phone number",
+        "classTextSuccess": "text-success",
+        "textSuccess": "Here is noothing. Opps."
+      })
+				<!-- input -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_input-block.html", {
+        "classBlock": "input-block input-block--small",
+        "label": "Email",
+        "classId": "email-app",
+        "classInput": "input input--small",
+        "placeholder": "Your working email",
+        "classTextSuccess": "text-success",
+        "textSuccess": "Here is noothing. Opps."
+      })
+				<!-- textarea -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_textarea-block.html", {
+          "classBlock": "textarea-block--small",
+          "label": "Message*",
+          "classId": "app-message",
+          "classTextarea": "textarea--application",
+          "placeholder": "Your message",
+        })
+				<!-- checkbox -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_checkbox.html", {
+          "classCheckbox": "checkbox checkbox--checked",
+          "label": "I agree to receive communications from Createx Construction Bureau.",
+          "classLabel": "label-checkbox--small",
+          "checkboxId": "checkbox-app"
+        })
+			</div>
+			<!-- basic button -->
+			<!-- prettier-ignore -->
+			@@include("../../components/elements/_button.html", {
+				"title": "send request",
+				"type": "button",
+				"className": "button button--regular button--basic"
+			})
+		</form>
+	</div>
+	<img class="application-bg" src="../../img/pictures/application-bg.jpg" alt="application background" />
+</section>

@@ -1,0 +1,23 @@
+<div class="vacancy-card">
+	<div class="vacancy-card__content">
+		<p class="vacancy-card__meta">
+			<svg class="vacancy-card__icon">
+				<use xlink:href="../../img/sprites/locations.svg#outline"></use>
+			</svg>
+			<span>@@place</span>
+			<span class="vacancy-card__divider"></span>
+			<svg class="vacancy-card__icon">
+				<use xlink:href="../../img/sprites/locations.svg#clock"></use>
+			</svg>
+			<span>@@time</span>
+		</p>
+		<p class="vacancy-card__position">@@position</p>
+	</div>
+	<!-- button -->
+	<!-- prettier-ignore -->
+	@@include("../../components/elements/_button.html", {
+    "title": "Apply now",
+    "className": "button--basic-reverse button--regular",
+    "type": "button"
+  })
+</div>

@@ -1,0 +1,58 @@
+.textarea-block {
+	@extend %tmpUbuntu-400;
+	&--base {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&--small {
+		font-size: 14px;
+		line-height: 150%;
+	}
+	&--extrasmall {
+		font-size: 12px;
+		line-height: 150%;
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+		line-height: 150%;
+	}
+	@media (max-width: 375px) {
+		font-size: 12px;
+		line-height: 150%;
+	}
+}
+
+.textarea-label {
+	display: block;
+	color: $gray-800;
+	margin-bottom: 8px;
+}
+
+.textarea {
+	@extend %tmpUbuntu-400;
+	resize: none;
+	width: 100%;
+	padding: 16px;
+	color: $gray-800;
+	background-color: $gray-200;
+	border: 1px solid $gray-400;
+	border-radius: 4px;
+	&--comment {
+		height: 100px;
+	}
+	&--application {
+		height: 66px;
+		margin-bottom: -6px;
+	}
+	&--modal {
+		height: 86px;
+	}
+	&::placeholder {
+		color: $gray-600;
+	}
+	&:focus {
+		background-color: $white;
+		border: 1px solid #ff5a3066;
+		box-shadow: $box-shadow-start, $box-shadow-focus;
+	}
+}

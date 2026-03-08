@@ -1,0 +1,89 @@
+.post-card {
+	border-radius: 4px;
+	box-shadow: $box-shadow-start, $box-shadow-end, $box-shadow-third, $box-shadow-fourth;
+	background-color: $white;
+	&--large {
+		max-width: 705px;
+		min-height: 540px;
+		@media (max-width: 768px) {
+			min-height: unset;
+			padding-bottom: 16px;
+		}
+	}
+	&--basic {
+		max-width: 600px;
+		min-height: 482px;
+		@media (max-width: 768px) {
+			min-height: unset;
+			padding-bottom: 16px;
+		}
+	}
+	&--small {
+		max-width: 495px;
+		min-height: 255px;
+		@media (max-width: 768px) {
+			min-height: unset;
+		}
+	}
+	.post-card__img {
+		@media (max-width: 768px) {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	.post-card__content {
+		padding-left: 24px;
+		padding-right: 24px;
+		.post-card__heading {
+			@extend %tmpUbuntu-700;
+			font-size: 20px;
+			line-height: 150%;
+			color: $gray-900;
+			margin-top: 21px;
+			margin-bottom: 13px;
+			cursor: pointer;
+			&--small {
+				margin-top: 13px;
+				margin-bottom: 8px;
+			}
+			&:hover {
+				color: $primary;
+			}
+		}
+		.post-card__meta-block {
+			@extend %tmpUbuntu-400;
+			font-size: 14px;
+			line-height: 150%;
+			color: $gray-700;
+			margin-bottom: 16px;
+			display: flex;
+			align-items: center;
+			gap: 0 12px;
+			.post-card__divider {
+				width: 1px;
+				height: 12px;
+				background-color: $gray-700;
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+			.post-card__icon {
+				width: 16px;
+				height: 16px;
+				fill: $gray-700;
+			}
+			span:last-of-type {
+				margin-left: -5px;
+			}
+		}
+		.post-card__text {
+			@extend %tmpUbuntu-400;
+			font-size: 16px;
+			line-height: 160%;
+			color: $gray-800;
+			&--small-no-text {
+				display: none;
+			}
+		}
+	}
+}

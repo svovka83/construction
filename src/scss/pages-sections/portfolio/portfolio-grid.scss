@@ -1,0 +1,29 @@
+.portfolio-grid {
+	margin-top: 122px;
+	margin-bottom: 99px;
+	text-align: center;
+}
+
+.portfolio-grid-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-bottom: 61px;
+	@media (max-width: 1280px) {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+	@media (max-width: 830px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.portfolio-grid__convert-button {
+	@extend %tmpUbuntu-700-regular;
+	color: $gray-800;
+	cursor: pointer;
+	.portfolio-grid__convert-button-img {
+		padding-right: 15px;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "Service_v2"
+	})
+	<body>
+		<!-- header -->
+		<header class="header" id="to-top">@@include("components/sections/_header.html")</header>
+		<main>
+			<!-- top of page -->
+			<section class="top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a href="./" class="top__navigation-natural">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a href="./services.html" class="top__navigation-natural">Services</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a href="#!" class="top__navigation-pale">Interior Design</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+									"title": "INTERIOR DESIGN",
+									"classNameTitle": "title--top"
+								})
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+									"subtext": "Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.",
+									"classNameSubtext": "subtext--top"
+								})
+					</div>
+				</div>
+				<img class="top__bg" src="./img/pictures/top-bg/service_v2-bg.png" alt="background of top" />
+			</section>
+			<!-- offers + accordion -->
+			<section class="offers container">
+				<img class="offers__img" src="./img//pictures/offer.jpg" alt="offer image" />
+				<div class="offers__content">
+					<h2 class="offers__content-title">We offer</h2>
+
+					<div class="accordion__content text-hidden">
+						<h3 class="accordion__title">
+							<img class="accordion__img" src="./img/pictures/minus.png" alt="accordion minus" /><span
+								class="accordion__plus plus"></span>
+							<span class="accordion__title-text">Interior design of apartments</span>
+						</h3>
+						<div class="accordion__text-content">
+							<p class="accordion__text">
+								Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus
+								dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac
+								facilisis.
+							</p>
+						</div>
+					</div>
+					<div class="accordion__content">
+						<h3 class="accordion__title">
+							<img class="accordion__img" src="./img/pictures/minus.png" alt="accordion minus" /><span
+								class="accordion__plus"></span>
+							<span class="accordion__title-text">Interior design of private houses</span>
+						</h3>
+						<div class="accordion__text-content">
+							<p class="accordion__text">
+								Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus
+								dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac
+								facilisis.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- steps -->
+			<section class="steps container">
+				<!-- title h1 -->
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_title.html", {
+						"title": "That’s how we do it",
+						"classNameTitle": "title--h1"
+					})
+				<div class="steps__content">
+					<!-- step -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_step.html", {
+							"number": "01",
+							"title": "Work Estimate",
+							"classTitle": "title--h5 title--mb-8",
+							"subtext": "Culpa nostrud commodo ea consequat aliquip reprehenderit.",
+							"classSubtext": "subtext--base"
+						})
+						@@include("./components/elements/_step.html", {
+							"number": "02",
+							"title": "Contract",
+							"classTitle": "title--h5 title--mb-8",
+							"subtext": "Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit imperdiet auctor et tempor.",
+							"classSubtext": "subtext--base"
+						})
+						@@include("./components/elements/_step.html", {
+							"number": "03",
+							"title": "Mobilization",
+							"classTitle": "title--h5 title--mb-8",
+							"subtext": "Odio massa scelerisque purus arcu sed velit eleifend cursus leo.",
+							"classSubtext": "subtext--base",
+							"classNumber": "step__number--active"
+						})
+						@@include("./components/elements/_step.html", {
+							"number": "04",
+							"title": "Construction Work",
+							"classTitle": "title--h5 title--mb-8",
+							"subtext": "Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.",
+							"classSubtext": "subtext--base"
+						})
+				</div>
+			</section>
+			<!-- values-benefits -->
+			<section class="values-benefits values-benefits--dark values-benefits--padding">
+				<div class="container">
+					<!-- title block -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_title-block.html", {
+						"title": "Our benefits",
+						"classTitle": "sections-title--light",
+						"subtext": "Our mission is to set the highest standards for construction sphere."
+					})
+					<div class="icon-boxes">
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Fixed Terms & Cost",
+							"text": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+							"classTitle": "icon-box__title--light",
+							"svgId": "#ic-contract"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Qualified Workers",
+							"text": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.",
+							"classTitle": "icon-box__title--light",
+							"svgId": "#ic-helmet"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_icon-box.html", {
+							"title": "Supervision & Control",
+							"text": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.",
+							"classTitle": "icon-box__title--light",
+							"svgId": "#ic-camera"
+						})
+					</div>
+				</div>
+				<!-- button -->
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_button.html", {
+					"title": "Discuss a project",
+					"className": "button--basic button--long button--centered-bottom"
+				})
+			</section>
+			<!-- portfolio -->
+			<section class="portfolio portfolio--extratop-padding container">
+				<div class="potrfolio__top">
+					<!-- title h1 -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "Related projects",
+						"classNameTitle": "title--h1 title--w705"
+					})
+					<!-- nav buttons -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_nav-buttons.html", {
+						"classLeft": "nav-button nav-button--left portfolio-slider-button-prev",
+						"classRight": "nav-button nav-button--right portfolio-slider-button-next"
+					})
+				</div>
+				<div class="portfolio__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Kids Bedroom With Decorations",
+								"text": "Apartments & flats",
+								"path": "./img/pictures/portfolio/portfolio-7.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Modern Double Bedroom",
+								"text": "Apartments & flats",
+								"path": "./img/pictures/portfolio/portfolio-8.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Scandinavian Style Interior",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-9.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Luxury Beach House",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-4.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Modern Cottege",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-5.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Brown and Gray Painted House",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-6.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+					</div>
+				</div>
+				<div class="text-button-block">
+					<!-- title h3 -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "Explore all our works",
+						"classNameTitle": "title title--h3"
+					})
+					<!-- basic button -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_button.html", {
+						"title": "View portfolio",
+						"type": "button",
+						"className": "button button--basic"
+					})
+				</div>
+			</section>
+			<!-- pricing-clients -->
+			<section class="pricing-clients">
+				<div class="container pricing-clients__inner">
+					<section class="pricing">
+						<!-- title block -->
+						<!-- prettier-ignore -->
+						@@include("components/elements/_title-block.html", {
+						"title": "Pricing",
+						"classTitle": "sections-title--dark",
+						"subtext": "We offer you three categories of construction."
+					})
+						<div class="table-wrapper">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>
+											<p class="table__first-cell">Items</p>
+										</th>
+										<th class="table__cell">
+											<!-- title h1 -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_title.html", {
+											"title": "BASIC",
+											"classNameTitle": "title--h4"
+										})
+										@@include("./components/elements/_subtext.html", {
+											"subtext": "$20 per m2",
+											"classNameSubtext": "subtext--table subtext--bold subtext--center"
+										})
+										</th>
+										<th class="table__cell">
+											<!-- title h1 -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_title.html", {
+											"title": "STANDARD",
+											"classNameTitle": "title--h4"
+										})
+										@@include("./components/elements/_subtext.html", {
+											"subtext": "$30 per m2",
+											"classNameSubtext": "subtext--table subtext--bold subtext--center"
+										})
+										</th>
+										<th class="table__cell">
+											<!-- title h1 -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_title.html", {
+											"title": "BUSINESS",
+											"classNameTitle": "title--h4"
+										})
+										@@include("./components/elements/_subtext.html", {
+											"subtext": "$40 per m2",
+											"classNameSubtext": "subtext--table subtext--bold subtext--center"
+										})
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- prettier-ignore -->
+									@@include("./components/elements/_table-row.html", {
+									"row-title": "Installation plan",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--gray"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Planning solutions (2-3 options)",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--white"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Lighting plan",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--gray"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Flooring plan",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--white"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Heating floor laying scheme",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--gray"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Air conditioner zones layout",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--white"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "3D visualization of all rooms",
+									"first-col": "simplified",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark-none",
+									"classSVG2": "table-mark",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--gray"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Visualization of each room (3-4 angles)",
+									"first-col": "",
+									"second-col": "",
+									"third-col": "",
+									"classSVG1": "table-mark-none",
+									"classSVG2": "table-mark-none",
+									"classSVG3": "table-mark",
+									"classRow": "table__row--white"
+								})
+								@@include("./components/elements/_table-row.html", {
+									"row-title": "Terms",
+									"first-col": "10 days",
+									"second-col": "20 days",
+									"third-col": "30 days",
+									"classSVG1": "table-mark-none",
+									"classSVG2": "table-mark-none",
+									"classSVG3": "table-mark-none",
+									"classRow": "table__row--gray"
+								})
+								</tbody>
+								<tfoot>
+									<tr>
+										<th></th>
+										<td class="table__cell">
+											<!-- button -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_button.html", {
+											"title": "send request",
+											"className": "button--small button--basic-reverse"
+										})
+										</td>
+										<td class="table__cell">
+											<!-- button -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_button.html", {
+											"title": "send request",
+											"className": "button--small button--basic-reverse"
+										})
+										</td>
+										<td class="table__cell">
+											<!-- button -->
+											<!-- prettier-ignore -->
+											@@include("./components/elements/_button.html", {
+											"title": "send request",
+											"className": "button--small button--basic-reverse"
+										})
+										</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+					<section class="clients">
+						<!-- title h1 -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+							"title": "Supported by 12+ partners",
+							"classNameTitle": "title title--h1"
+						})
+						<!-- clients-icons -->
+						<!-- prettier-ignore -->
+						@@include("./components/sections/_clients-icons.html")
+					</section>
+					<img
+						class="pricing-clients__bg"
+						src="./img/pictures/pricing-clients-bg.png"
+						alt="pricing clients background" />
+				</div>
+			</section>
+
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

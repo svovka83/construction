@@ -1,0 +1,23 @@
+// clients and testimonials
+
+.clients-testimonials {
+	max-width: 1920px;
+	min-height: 934px;
+	padding-top: 80px;
+	padding-bottom: 121px;
+	background-color: $gray-200;
+}
+
+.clients-testimonials__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 180px 0;
+	@media (max-width: 1280px) {
+		gap: 90px 0;
+	}
+}
+
+// clients
+.clients {
+	text-align: center;
+}

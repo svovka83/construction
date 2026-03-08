@@ -1,0 +1,47 @@
+.tab {
+	flex-shrink: 0; // щоб не стискався елемент батько якого має display: flex;
+	width: 230px;
+	height: 154px;
+	background-color: $white;
+	border-radius: 4px;
+	box-shadow: $box-shadow-start, $box-shadow-end, $box-shadow-third, $box-shadow-fourth;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 30;
+	cursor: pointer;
+	&:hover {
+		.tab__inner {
+			.tab__icon {
+				fill: $primary-hover;
+			}
+			.tab__title {
+				color: $gray-900;
+			}
+		}
+	}
+	&--primary {
+		background-color: $primary;
+		box-shadow: $box-shadow-third, $box-primary-8, $box-primary-10, $box-primary-16;
+	}
+	.tab__inner {
+		text-align: center;
+		.tab__icon {
+			width: 48px;
+			height: 48px;
+			margin-bottom: 15px;
+			fill: $primary;
+			&--primary {
+				fill: $white;
+			}
+		}
+		.tab__title {
+			@extend %tmpUbuntu-700-regular;
+			color: $gray-600;
+			&--primary {
+				color: $white;
+			}
+		}
+	}
+}

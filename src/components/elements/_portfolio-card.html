@@ -1,0 +1,12 @@
+<div class="portfolio-card @@classCard">
+	<img class="portfolio-card__img @@classImg" src="@@path" alt="portfolio slide image" />
+	<h3 class="portfolio-card__title">@@title</h3>
+	<p class="portfolio-card__text">@@text</p>
+	<div class="button-in-active @@classBtn">
+		<!-- prettier-ignore -->
+		@@include("./_button.html", {
+      "title": "View project",
+      "type": "button",
+      "className": "button button--regular button--basic-reverse" })
+	</div>
+</div>

@@ -1,0 +1,89 @@
+.offers {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 28px;
+	margin-bottom: 155px;
+	@media (max-width: 1178px) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	@media (max-width: 1078px) {
+		padding-top: 0;
+		margin-top: -28px;
+		margin-bottom: 120px;
+	}
+	.offers__img {
+		max-width: 705px;
+		max-height: 440px;
+		@media (max-width: 768px) {
+			max-width: 100%;
+		}
+	}
+	.offers__content {
+		max-width: 420px;
+		.offers__content-title {
+			font-family: "Lato", sans-serif;
+			font-weight: 900;
+			font-size: 46px;
+			line-height: 130%;
+			color: $gray-900;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+// accordion implementation
+
+.accordion__title {
+	position: relative;
+	@extend %tmpUbuntu-700-large;
+	color: $gray-900;
+	background-color: $white;
+	z-index: 1;
+	cursor: pointer;
+	@media (max-width: 768px) {
+		font-size: 22px;
+	}
+	.accordion__img {
+		width: 22px;
+		height: 22px;
+		margin-top: 10px;
+		margin-right: 13px;
+		vertical-align: top;
+	}
+	.accordion__plus {
+		display: inline-block;
+		width: 2px;
+		height: 20px;
+		background-color: $primary;
+		transform: translate(-25px, 11px);
+		vertical-align: top;
+		&.plus {
+			background-color: transparent;
+		}
+	}
+	.accordion__title-text {
+		display: inline-block;
+		max-width: 335px;
+		@media (max-width: 768px) {
+			max-width: 280px;
+		}
+	}
+}
+.accordion__text-content {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease;
+}
+.accordion__text {
+	@extend %tmpUbuntu-400-regular;
+	color: $gray-700;
+	margin-left: 44px;
+	margin-top: 14px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
+.accordion__content.text-hidden .accordion__text-content {
+	grid-template-rows: 1fr;
+}

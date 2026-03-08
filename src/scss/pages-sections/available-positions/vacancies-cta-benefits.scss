@@ -1,0 +1,45 @@
+.vacancies-cta-benefits {
+	padding-top: 28px;
+	padding-bottom: 180px;
+	@media (max-width: 1200px) {
+		padding-top: 0;
+		padding-bottom: 90px;
+	}
+}
+
+.vacancies-cta {
+	display: grid;
+	grid-template-columns: 705px 1fr;
+	margin-bottom: 180px;
+	@media (max-width: 1200px) {
+		grid-template-columns: minmax(auto, 705px);
+		justify-content: center;
+		gap: 60px 0;
+	}
+	@media (max-width: 768px) {
+		margin-bottom: 90px;
+	}
+}
+
+.vacancies {
+	display: flex;
+	flex-direction: column;
+	gap: 24px 0;
+}
+
+.cta {
+	max-width: 390px;
+	min-height: 262px;
+	justify-self: end;
+	@media (max-width: 1200px) {
+		justify-self: center;
+	}
+	.cta__buttons {
+		display: flex;
+		gap: 10px 30px;
+		@media (max-width: 410px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}

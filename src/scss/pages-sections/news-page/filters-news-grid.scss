@@ -1,0 +1,47 @@
+.filters-news-grid {
+	padding-top: 28px;
+	padding-bottom: 180px;
+	text-align: center;
+	@media (max-width: 1078px) {
+		padding-top: 0;
+		padding-bottom: 90px;
+		margin-top: -28px;
+	}
+}
+
+.filter-wrapper {
+	overflow-x: scroll;
+	scrollbar-width: none;
+}
+
+.filters {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 58px;
+}
+
+.news-grid {
+	text-align: start;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 60px 30px;
+	@media (max-width: 1280px) {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
+}
+
+.news-grid__pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0 21px;
+	margin-top: 59px;
+	.news-grid__pagination-num {
+		@extend %tmpUbuntu-700-minlarge;
+		color: $gray-800;
+		&:hover {
+			color: $primary;
+		}
+	}
+}

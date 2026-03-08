@@ -1,0 +1,52 @@
+.comment {
+	text-align: start;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	gap: 30px;
+	margin-top: 61px;
+	@media (max-width: 550px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.comment__left-side {
+	.comment__username {
+		@extend %tmpUbuntu-700-minlarge;
+		color: $gray-900;
+		margin-bottom: 8px;
+	}
+	.comment__date {
+		@extend %tmpUbuntu-400-small;
+		color: $gray-700;
+	}
+}
+
+.comment__right-side {
+	.comment__text {
+		@extend %tmpUbuntu-400-regular;
+		color: $gray-800;
+		margin-bottom: 16px;
+		.comment__current-user {
+			font-weight: 700;
+			color: $primary;
+		}
+	}
+	.comment__reply-block {
+		display: flex;
+		align-items: center;
+		gap: 0 8px;
+		.comment__icon {
+			width: 16px;
+			height: 16px;
+			fill: $gray-700;
+			cursor: pointer;
+			&:hover {
+				fill: $primary;
+			}
+		}
+		.comment__reply-block {
+			@extend %tmpUbuntu-400-small;
+			color: $gray-700;
+		}
+	}
+}

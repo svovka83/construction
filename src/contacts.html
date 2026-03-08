@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "Contacts"
+	})
+	<body>
+		<!-- header -->
+		<header class="header">@@include("components/sections/_header.html")</header>
+
+		<main>
+			<!-- top of page -->
+			<section class="top" id="to-top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a href="./" class="top__navigation-natural">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a class="top__navigation-pale" href="#!">Contacts</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+						"title": "CONTACTS",
+						"classNameTitle": "title--top"
+					})
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+						"subtext": "Contact us for all your construction needs. We always welcome any questions and comments.",
+						"classNameSubtext": "subtext--top"
+					})
+					</div>
+				</div>
+				<img
+					class="top__bg top__bg--contacts"
+					src="./img/pictures/top-bg/contacts-bg.png"
+					alt="background of top" />
+			</section>
+			<!-- contact form -->
+			<section class="contact-form">
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_title-block.html", {
+					"title": "Contact us",
+					"subtext": "Please complete the form. Detailed information will help us to make a tuned offer."
+				})
+				<div class="contact-form__content container">
+					<img class="contact-form__img" src="./img/pictures/contact-photo.jpg" alt="contact form image" />
+					<form class="contact-form__form" action="#!">
+						<div class="contact-form__grid">
+							<!-- input -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_input-block.html", {
+								"classBlock": "input-block input-block--base",
+								"label": "Name*",
+								"classId": "name-contact",
+								"classInput": "input input--base input--width-100",
+								"placeholder": "Your name",
+								"classTextSuccess": "text-success",
+								"textSuccess": "Here is noothing. Opps."
+							})
+							<!-- dropdown -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_input-block.html", {
+								"classBlock": "input-block input-block--base",
+								"label": "I am interested in",
+								"classId": "interests-contact",
+								"classInput": "input input--base input--width-100 input--dropdown input--dropdown-placeholder",
+								"placeholder": "Interior Design",
+								"classTextSuccess": "text-success",
+								"textSuccess": "Here is noothing. Opps."
+							})
+							<!-- input -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_input-block.html", {
+								"classBlock": "input-block input-block--base",
+								"label": "Phone*",
+								"classId": "phone--contact",
+								"classInput": "input input--base input--width-100",
+								"placeholder": "Your phone number",
+								"classTextSuccess": "text-success",
+								"textSuccess": "Here is noothing. Opps."
+							})
+							<!-- dropdown -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_input-block.html", {
+								"classBlock": "input-block input-block--base",
+								"label": "Location*",
+								"classId": "location-contact",
+								"classInput": "input input--base input--width-100 input--dropdown input--dropdown-placeholder",
+								"placeholder": "New York",
+								"classTextSuccess": "text-success",
+								"textSuccess": "Here is noothing. Opps."
+							})
+							<!-- input -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_input-block.html", {
+								"classBlock": "input-block input-block--base",
+								"label": "Email",
+								"classId": "email-contact",
+								"classInput": "input input--base input--width-100",
+								"placeholder": "Your working email",
+								"classTextSuccess": "text-success",
+								"textSuccess": "Here is noothing. Opps."
+							})
+							<div class="contact-form__radio">
+								<h5 class="contact-form__radio-title">Preferred contact method</h5>
+								<div class="contact-form__radio-block">
+									<!-- radio buttons -->
+									<!-- prettier-ignore -->
+									@@include("./components/elements/_radio-button.html", {
+										"name": "method",
+										"radioiId": "radio-phone",
+										"text": "Phone",
+										"value": "phone",
+										"checked": "checked"
+									})
+									@@include("./components/elements/_radio-button.html", {
+										"name": "method",
+										"radioiId": "radio-email",
+										"text": "Email",
+										"value": "email"
+									})
+									@@include("./components/elements/_radio-button.html", {
+										"name": "method",
+										"radioiId": "radio-viber",
+										"text": "Viber",
+										"value": "viber"
+									})
+								</div>
+							</div>
+							<!-- textarea -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_textarea-block.html", {
+								"classBlock": "textarea-block--base",
+								"label": "Message*",
+								"classId": "comment",
+								"classTextarea": "textarea--comment",
+								"placeholder": "Your message",
+							})
+						</div>
+						<div class="contact-form__confirm-button">
+							<!-- checkbox -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_checkbox.html", {
+								"classCheckbox": "checkbox checkbox--checked",
+								"label": "I agree to receive communications from Createx Construction Bureau.",
+								"classLabel": "label-checkbox--base",
+								"checkboxId": "checkbox-contact"
+							})
+							<!-- button -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_button.html", {
+								"title": "send request",
+								"className": "button--basic"
+							})
+						</div>
+					</form>
+				</div>
+			</section>
+			<!-- contacts -->
+			<div class="contacts">
+				<section class="offices container">
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title-block.html", {
+						"title": "Our offices",
+						"subtext": "Give us a call, send us a note or visit our office. We can’t wait to hear from you!"
+					})
+					<div class="icon-boxes">
+						<!-- prettier-ignore -->
+						@@include("components/elements/_contact-box.html", {
+							"title": "New York, USA",
+							"classTitle": "title--h3 title--mb-24",
+							"address": "8502 Preston Rd. Inglewood, New York 98380",
+							"number": "4055550128",
+							"phone": "(405) 555-0128",
+							"time": "Mon - Fri 9:00 - 18:00"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_contact-box.html", {
+							"title": "New Jersey, USA",
+							"classTitle": "title--h3 title--mb-24",
+							"address": "2464 Royal Ln. Mesa, New Jersey 45463",
+							"number": "4055550111",
+							"phone": "(808) 555-0111",
+							"time": "Mon - Fri 9:00 - 18:00"
+						})
+						<div class="vertical-line"></div>
+						<!-- prettier-ignore -->
+						@@include("components/elements/_contact-box.html", {
+							"title": "San Francisco, USA",
+							"classTitle": "title--h3 title--mb-24",
+							"address": "8502 Preston Rd. Inglewood, San Francisco 98380",
+							"number": "4055550125",
+							"phone": "(505) 555-0125",
+							"time": "Mon - Fri 10:00 - 18:00"
+						})
+					</div>
+				</section>
+				<section class="follow container">
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "Find us at",
+						"classNameTitle": "title--h1 title--mb40"
+					})
+					<!-- socials -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_socials.html", {
+						"classList": "social-list--office",
+						"classIcon": "social-icon--office"
+					})
+				</section>
+			</div>
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

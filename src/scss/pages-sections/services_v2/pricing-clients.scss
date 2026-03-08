@@ -1,0 +1,17 @@
+.pricing-clients {
+	position: relative;
+	min-height: 1418px;
+	padding-top: 80px;
+	padding-bottom: 110px;
+	margin-top: -21px;
+	background-color: $gray-200;
+}
+
+.pricing-clients__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	@media (max-width: 650px) {
+		left: -260px;
+	}
+}

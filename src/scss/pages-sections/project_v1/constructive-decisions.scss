@@ -1,0 +1,54 @@
+.constructive-decisions {
+	background-color: $gray-200;
+	margin-bottom: 60px;
+}
+
+.constructive-decisions__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	padding-bottom: 20px;
+	position: relative;
+	top: 80px;
+	@media (max-width: 1150px) {
+		flex-direction: column-reverse;
+		align-items: center;
+		gap: 60px 0;
+	}
+	.constructive-decisions__img {
+		@media (max-width: 700px) {
+			width: 80%;
+		}
+	}
+	.constructive-decisions__content {
+		width: 600px;
+		@media (max-width: 700px) {
+			width: unset;
+			max-width: 600px;
+		}
+	}
+}
+
+.constructive-decisions__list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px 0;
+	margin-top: 60px;
+	.constructive-decisions__item {
+		@extend %tmpUbuntu-400-regular;
+		color: $gray-800;
+		position: relative;
+		padding-left: 36px;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 4px;
+			width: 20px;
+			height: 20px;
+			background-image: url("../img/icons/circle-mark.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+}

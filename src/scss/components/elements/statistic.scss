@@ -1,0 +1,38 @@
+.statistic {
+	min-height: 178px;
+	text-align: center;
+	cursor: pointer;
+	&:hover {
+		.statistic__img {
+			fill: $primary;
+		}
+		.statistic__rate {
+			color: $primary-hover;
+		}
+	}
+	.statistic__img {
+		width: 48px;
+		height: 48px;
+		fill: $gray-600;
+		margin-bottom: 18px;
+	}
+	.statistic__rate {
+		@extend %tmpUbuntu-700-extralarge;
+		color: $primary;
+		margin-bottom: 8px;
+		&--square {
+			&::after {
+				content: "2";
+				font-size: 32px;
+				line-height: 32px;
+				position: relative;
+				top: -18px;
+			}
+		}
+	}
+	.statistic__text {
+		@extend %tmpUbuntu-400-small;
+		color: $gray-900;
+		width: 240px;
+	}
+}

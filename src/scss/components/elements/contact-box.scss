@@ -1,0 +1,23 @@
+.contact-box {
+	width: 250px;
+	text-align: start;
+	.contact-box__address {
+		@extend %tmpUbuntu-400-regular;
+		color: $gray-800;
+		margin-bottom: 4px;
+	}
+	.contact-box__on-map {
+		@extend %tmpUbuntu-400-regular;
+		color: $primary;
+		text-decoration: underline;
+		margin-bottom: 22px;
+	}
+	.contact-box__call {
+		@extend %tmpUbuntu-400-regular;
+		color: $gray-900;
+		margin-bottom: 4px;
+		.contact-box__pale {
+			color: $gray-700;
+		}
+	}
+}

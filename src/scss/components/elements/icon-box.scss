@@ -1,0 +1,31 @@
+.icon-box {
+	max-width: 285px;
+	text-align: center;
+}
+
+.icon-box__sprite {
+	width: 48px;
+	height: 48px;
+	fill: $primary;
+}
+
+.icon-box__title {
+	@extend %tmpUbuntu-700;
+	font-size: 20px;
+	line-height: 150%;
+	margin-top: 20px;
+	margin-bottom: 8px;
+	&--dark {
+		color: $gray-900;
+	}
+	&--light {
+		color: $white;
+	}
+}
+
+.icon-box__text {
+	@extend %tmpUbuntu-400;
+	font-size: 16px;
+	line-height: 160%;
+	color: $gray-700;
+}

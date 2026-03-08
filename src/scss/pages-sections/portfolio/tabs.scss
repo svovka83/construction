@@ -1,0 +1,10 @@
+.tabs {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -94px;
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+	scrollbar-width: none;
+}

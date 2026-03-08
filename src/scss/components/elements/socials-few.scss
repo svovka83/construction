@@ -1,0 +1,10 @@
+.socials-few {
+	display: flex;
+	align-items: center;
+	gap: 0 12px;
+	.socials-few__icon {
+		width: 24px;
+		height: 24px;
+		fill: $gray-700;
+	}
+}

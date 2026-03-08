@@ -1,0 +1,14 @@
+.tab-news {
+	flex-shrink: 0; // щоб не стискався елемент батько якого має display: flex;
+	@extend %tmpUbuntu-700-regular;
+	color: $gray-600;
+	width: 205px;
+	padding: 10px 0;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	cursor: pointer;
+	&:hover {
+		color: $primary;
+		border: 1px solid $primary;
+	}
+}

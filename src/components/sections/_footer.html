@@ -1,0 +1,102 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<div class="footer__top-left">
+				<div class="footer__top-left-top">
+					<a class="logo" href="#">
+						<img class="logo__img" src="../../img/icons/logo-footer.svg" alt="logo" />
+					</a>
+					@@include("../elements/_socials.html")
+				</div>
+				<p class="footer__top-left-text">
+					Createx Construction Bureau has been successfully operating in the USA construction market since
+					2000. We are proud to offer you quality construction and exemplary service. Our mission is to set
+					the highest standards for construction sphere.
+				</p>
+			</div>
+			<div class="footer__top-right">
+				<!-- title h4 -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_title.html", {
+					"title": "Let’s stay in touch",
+					"classNameTitle": "title title--h4 title--white"
+				})
+				<form class="footer__form" action="#!">
+					<!-- input -->
+					<!-- prettier-ignore -->
+					@@include("../../components/elements/_input-block.html", {
+            "classBlock": "input-block input-block--small input-block--inline-block",
+            "label": "",
+            "classId": "footer-email",
+            "classInput": "input input--small input--no-right-radiuses input--dark-theme",
+            "placeholder": "Your email address",
+            "classTextSuccess": "text-success",
+            "textSuccess": "Here is noothing. Opps."
+          })
+					<!-- button -->
+					<!-- prettier-ignore -->
+					@@include("../../components/elements/_button.html", {
+            "title": "subscribe",
+            "type": "button",
+            "className": "button button--basic button--regular button--no-left-radiuses button--short" })
+				</form>
+				<p class="footer__top-right-text">
+					*Subscribe to our newsletter to receive communications and early updates from Createx Construction
+					Bureau.
+				</p>
+			</div>
+		</div>
+		<div class="footer__middle">
+			<div class="footer__middle-left">
+				<!-- title h6 -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_title.html", {
+					"title": "HEAD OFFICE",
+					"classNameTitle": "title--h6 title--white title--spacing-1 title--uppercase"
+				})
+				<div class="footer__middle-inner-block">
+					<p>Address: <span class="footer__text-link">8502 Preston Rd. Inglewood, New York</span></p>
+					<p>Call: <span class="footer__text-link">(405) 555-0128</span></p>
+					<p>Email: <span class="footer__text-link">hello@createx.com</span></p>
+				</div>
+			</div>
+			<div class="footer__middle-middle">
+				<!-- title h6 -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_title.html", {
+					"title": "WHO WE ARE",
+					"classNameTitle": "title title--h6 title--white title--spacing-1 title--uppercase"
+				})
+				<div class="footer__middle-inner-block">
+					<p class="footer__text-link">About Us</p>
+					<p class="footer__text-link">Available Positions</p>
+					<p class="footer__text-link">Contacts</p>
+				</div>
+			</div>
+			<div class="footer__middle-right">
+				<!-- title h6 -->
+				<!-- prettier-ignore -->
+				@@include("../../components/elements/_title.html", {
+					"title": "OUR EXPERIENCE",
+					"classNameTitle": "title title--h6 title--white title--spacing-1 title--uppercase"
+				})
+				<div class="footer__middle-inner-block">
+					<p class="footer__text-link">Services</p>
+					<p class="footer__text-link">Work</p>
+					<p class="footer__text-link">News</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<p class="footer__bottom-left">
+				© All rights reserved. Made with
+				<img class="footer__heart" src="../../img/icons/heart.svg" alt="footer heart" />
+				by Createx Studio
+			</p>
+			<a class="footer__bottom-right" href="#to-top">
+				<span class="footer__go-to-top">GO TO TOP</span>
+				<img class="footer__link-to-up" src="../../img/icons/up-arrow.png" alt="go to top of the page" />
+			</a>
+		</div>
+	</div>
+</footer>

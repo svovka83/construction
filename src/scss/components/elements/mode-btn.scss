@@ -1,0 +1,45 @@
+.mode-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	&--play {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		background-color: $primary;
+		top: 49.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&--mute {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(255, 255, 255, 0.12);
+		bottom: 36px;
+		left: 32px;
+	}
+}
+
+.mode-btn-img {
+	width: 26px;
+	height: 26px;
+}
+
+@media (max-width: 768px) {
+	.mode-btn {
+		&--play {
+			width: 52px;
+			height: 52px;
+		}
+		&--mute {
+			bottom: 10%;
+			left: 5%;
+		}
+	}
+	.mode-btn-img {
+		width: 16px;
+		height: 16px;
+	}
+}

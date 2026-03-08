@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "Portfolio"
+	})
+	<body>
+		<!-- header -->
+		<!-- prettier-ignore -->
+		<header class="header" id="to-top">@@include("components/sections/_header.html")</header>
+
+		<main>
+			<!-- top of page -->
+			<section class="top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a class="top__navigation-natural" href="./">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a class="top__navigation-pale" href="./project_v1.html">Work</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+									"title": "OUR WORK",
+									"classNameTitle": "title--top"
+								})
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+									"subtext": "Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.",
+									"classNameSubtext": "subtext--top"
+								})
+					</div>
+				</div>
+				<!-- tabs -->
+				<div class="tabs container">
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_tab.html", {
+								"title": "All Projects",
+								"svgId": "#ic-house",
+								"classTab": "tab--primary",
+								"classIcon": "tab__icon--primary",
+								"classTitle": "tab__title--primary"
+							})
+							@@include("./components/elements/_tab.html", {
+								"title": "Construction",
+								"svgId": "#ic-construction"
+							})
+							@@include("./components/elements/_tab.html", {
+								"title": "Project Development",
+								"svgId": "#ic-plan"
+							})
+							@@include("./components/elements/_tab.html", {
+								"title": "Interior Design",
+								"svgId": "#ic-pantone"
+							})
+							@@include("./components/elements/_tab.html", {
+								"title": "Repairs",
+								"svgId": "#ic-panting"
+							})
+				</div>
+				<img class="top__bg" src="./img/pictures/top-bg/portfolio-bg.png" alt="background of top" />
+			</section>
+			<!-- portfolio-grid -->
+			<div class="portfolio-grid container">
+				<div class="portfolio-grid-cards">
+					<!-- portfolio slide -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_portfolio-card.html", {
+            "title": "Cubes Building",
+            "text": "Business Centers",
+            "path": "./img/pictures/portfolio/portfolio-2.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Modern Cottage",
+            "text": "Private houses",
+            "path": "./img/pictures/portfolio/portfolio-5.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Luxury Beach House",
+            "text": "Private houses",
+            "path": "./img/pictures/portfolio/portfolio-4.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Modern Double Bedroom",
+            "text": "Apartments & flats",
+            "path": "./img/pictures/portfolio/portfolio-8.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Kids Bedroom With Decorations",
+            "text": "Apartments & flats",
+            "path": "./img/pictures/portfolio/portfolio-7.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "The Pencil Building",
+            "text": "Stores & Malls",
+            "path": "./img/pictures/portfolio/portfolio-3.jpg",
+            "classCard": "portfolio-card--active portfolio-card--visible"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Red Finger Building",
+            "text": "Business Centers",
+            "path": "./img/pictures/portfolio/portfolio-1.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Scandinavian Style Interior",
+            "text": "Private houses",
+            "path": "./img/pictures/portfolio/portfolio-9.jpg"
+          })
+          @@include("./components/elements/_portfolio-card.html", {
+            "title": "Brown and Gray Painted House",
+            "text": "Private houses",
+            "path": "./img/pictures/portfolio/portfolio-6.jpg"
+          })
+				</div>
+				<button class="portfolio-grid__convert-button">
+					<img
+						class="portfolio-grid__convert-button-img"
+						src="./img/icons/convert.svg"
+						alt="convert button" />
+					Load more
+				</button>
+			</div>
+			<!-- testimonials -->
+			<div class="testimonials-portfolio">
+				<div class="container">
+					<section class="testimonials">
+						<div class="testimonials__content">
+							<!-- title h1 -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
+              "title": "What our clients are saying",
+              "classNameTitle": "title title--h1"
+            })
+							<div class="testimonials-slider testimonials-buttons-positioner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+                  "path": "../../img/pictures/testimonials/profile.png",
+                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+                  "name": "Shawn Edwards",
+                  "position": "Position, Company name"
+                })
+									</div>
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+                  "path": "../../img/pictures/testimonials/profile.png",
+                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+                  "name": "Shawn Edwards",
+                  "position": "Position, Company name"
+                })
+									</div>
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+                  "path": "../../img/pictures/testimonials/profile.png",
+                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+                  "name": "Shawn Edwards",
+                  "position": "Position, Company name"
+                })
+									</div>
+								</div>
+								<!-- buttons -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_nav-buttons.html", {
+              "classLeft": "nav-button nav-button--transperant testimonials-button-prev",
+              "classRight": "nav-button nav-button--transperant testimonials-button-next"
+            })
+							</div>
+						</div>
+						<img
+							class="testimonials__img"
+							src="./img/pictures/testimonials/right-image.jpg"
+							alt="testimonials image" />
+					</section>
+				</div>
+			</div>
+			<!-- clients -->
+			<div class="clients-portfolio">
+				<div class="container">
+					<section class="clients">
+						<!-- title h1 -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+          "title": "Our clients",
+          "classNameTitle": "title title--h1"
+        })
+						<!-- clients-icons -->
+						<!-- prettier-ignore -->
+						@@include("./components/sections/_clients-icons.html")
+					</section>
+				</div>
+			</div>
+
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

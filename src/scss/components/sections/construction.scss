@@ -1,0 +1,21 @@
+.construction {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 81px;
+	&--reverse {
+		flex-direction: row-reverse;
+	}
+	@media (max-width: 1078px) {
+		flex-direction: column;
+		gap: 30px;
+	}
+}
+
+.construction__img {
+	width: 100%;
+}
+
+.construction__content {
+	max-width: 574px;
+}

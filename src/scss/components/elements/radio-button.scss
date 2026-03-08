@@ -1,0 +1,10 @@
+.radio-label {
+	@extend %tmpUbuntu-400-regular;
+	color: $gray-800;
+	margin-left: 11px;
+}
+.radio {
+	width: 16px;
+	height: 16px;
+	accent-color: $primary;
+}

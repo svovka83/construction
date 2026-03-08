@@ -1,0 +1,32 @@
+.service-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 285px;
+	height: 285px;
+	border-radius: 4px;
+	&--no-active {
+		color: $gray-900;
+		background-color: $white;
+		border: 1px solid $gray-300;
+		box-shadow: 0 4px 4px -4px #1e212c0d, 0 12px 10px -6px #1e212c14;
+	}
+	&--active {
+		color: $white;
+		background: linear-gradient($gray-900-60, $gray-900-60), url("../img/icons/service-icons/service-hover.jpg");
+		border: 1px solid $gray-900;
+		box-shadow: 0 4px 4px -4px #1e212c0d, 0 12px 10px -6px #1e212c14;
+	}
+}
+.service-item__inner {
+}
+.service-item__img {
+	width: 52px;
+	height: 52px;
+	margin-bottom: 21px;
+}
+.service-item__title {
+	@extend %tmpUbuntu-700;
+	font-size: 20px;
+	line-height: 150%;
+}

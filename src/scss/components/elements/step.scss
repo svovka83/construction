@@ -1,0 +1,30 @@
+.step {
+	max-width: 285px;
+	.step__number {
+		display: inline-block;
+		@extend %tmpUbuntu-700-extralarge;
+		color: $gray-400;
+		width: 116px;
+		height: 116px;
+		padding: 12px 16px;
+		margin-right: -40px;
+		margin-bottom: -15px;
+		border-radius: 50%;
+		border: 16px solid $white;
+		background-color: $white;
+		translate: (-33px -2px);
+		position: relative;
+		z-index: -1;
+		&--active {
+			color: $primary;
+			background-color: #ffdbd2;
+			border: 16px solid #fff4f1;
+		}
+	}
+	.step__dashed-line {
+		display: inline-block;
+		width: 205px;
+		height: 18px;
+		border-top: 1px dashed $gray-400;
+	}
+}

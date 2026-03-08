@@ -1,0 +1,17 @@
+.statistics {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 29px;
+	padding-bottom: 120px;
+	@media (max-width: 1078px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+		gap: 30px 0;
+		padding-top: 0;
+	}
+	@media (max-width: 650px) {
+		grid-template-columns: 1fr;
+		padding-bottom: 90px;
+	}
+}

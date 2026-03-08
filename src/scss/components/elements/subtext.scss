@@ -1,0 +1,40 @@
+.subtext {
+	@extend %tmpUbuntu-400;
+	color: $gray-700;
+	&--bold {
+		@extend %tmpUbuntu-700;
+	}
+	&--gray-800 {
+		color: $gray-800;
+	}
+	&--black {
+		color: $gray-900;
+	}
+	&--top {
+		font-size: 20px;
+		line-height: 150%;
+	}
+	&--large {
+		font-size: 18px;
+		line-height: 150%;
+		margin-bottom: 60px;
+	}
+	&--table {
+		font-size: 18px;
+		line-height: 150%;
+		text-align: start;
+	}
+	&--base {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&--center {
+		text-align: center;
+	}
+	&--mb-48 {
+		margin-bottom: 48px;
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,57 @@
+// clients-team
+
+.clients-team {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	text-align: center;
+	position: relative;
+	@media (max-width: 660px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+}
+
+.clients-team__bg {
+	position: absolute;
+	left: 0;
+	bottom: -320px;
+	z-index: -1;
+	@media (max-width: 660px) {
+		left: -100px;
+	}
+}
+
+// team
+
+.team {
+	padding-top: 180px;
+	@media (max-width: 1078px) {
+		padding-top: 90px;
+	}
+}
+
+.team__cards-block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 60px 30px;
+	margin-bottom: 80px;
+	@media (max-width: 1280px) {
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+	@media (max-width: 940px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: 660px) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.team__positions {
+	@extend %tmpUbuntu-400-large;
+	color: $gray-900;
+	.team__positions-link {
+		text-decoration: underline;
+		color: $primary;
+	}
+}

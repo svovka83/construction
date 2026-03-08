@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "News"
+	})
+	<body>
+		<!-- header -->
+		<header class="header">@@include("components/sections/_header.html")</header>
+
+		<main>
+			<!-- top of page -->
+			<section class="top" id="to-top">
+				<div class="container">
+					<div class="top__content">
+						<p class="top__navigation">
+							<a href="./" class="top__navigation-natural">Homepage</a>
+							<span class="top__navigation-pale top__navigation--slash">/</span>
+							<a class="top__navigation-pale" href="./single-post.html">News</a>
+						</p>
+						<!-- title top -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+              "title": "NEWS",
+              "classNameTitle": "title--top"
+            })
+						<!-- subtext -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_subtext.html", {
+              "subtext": "Stay tuned with our news, expert tips and articles.",
+              "classNameSubtext": "subtext--top"
+            })
+					</div>
+				</div>
+				<img
+					class="top__bg top__bg--quaternary"
+					src="./img/pictures/top-bg/news-bg.png"
+					alt="background of top" />
+			</section>
+			<!-- filters and news-grid -->
+			<div class="filters-news-grid container">
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_title.html", {
+          "title": "Categories",
+          "classNameTitle": "title--h1"
+        })
+				<!-- filters -->
+				<div class="filter-wrapper">
+					<div class="filters">
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_tab-news.html", {
+            "text": "All News"
+          })
+					@@include("./components/elements/_tab-news.html", {
+            "text": "Company News"
+          })
+					@@include("./components/elements/_tab-news.html", {
+            "text": "Innovation"
+          })
+					@@include("./components/elements/_tab-news.html", {
+            "text": "Industry News"
+          })
+					@@include("./components/elements/_tab-news.html", {
+            "text": "Expert Tips"
+          })
+					@@include("./components/elements/_tab-news.html", {
+            "text": "Marketing"
+          })
+					</div>
+				</div>
+				<!-- news-grid -->
+				<div class="news-grid">
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-1.jpg",
+            "title": "How to Build Climate Change-Resilient Infrastructure",
+            "category": "Industry News",
+            "date": "June 24, 2020",
+            "comments": "4 comments",
+            "text": "Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis..."
+          })
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-2.jpg",
+            "title": "How Construction Can Help Itself",
+            "category": "Innovation",
+            "date": "June 12, 2020",
+            "comments": "No comments",
+            "text": "Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus..."
+          })
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-3.jpg",
+            "title": "The Difference Between a Digger and an Excavator",
+            "category": "Expert Tips",
+            "date": "May 16, 2020",
+            "comments": "No comments",
+            "text": "Cras est nisi purus velit facilisi vitae, dolor. Lorem scelerisque integer duis et nulla lobortis cursus. Viverra erat sollicitudin praesent viverra..."
+          })
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-4.jpg",
+            "title": "Building Construction Hand Tools",
+            "category": "Expert Tips",
+            "date": "February 25, 2020",
+            "comments": "1 comment",
+            "text": "Tellus quis aliquet volutpat nunc pulvinar donec sed sapien. Vitae elit id dolor, tristique massa. Fames lobortis orci rutrum bibendum integer..."
+          })
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-5.jpg",
+            "title": "Top 10 Construction Trends",
+            "category": "Industry News",
+            "date": "January 14, 2020",
+            "comments": "No comments",
+            "text": "Dignissim sed enim, eleifend morbi condimentum. Congue id quis vulputate dignissim eget. Ac ullamcorper nunc habitasse enim interdum platea..."
+          })
+					@@include("./components/elements/_post-card.html", {
+            "classCard": "post-card--basic",
+            "path": "basic-6.jpg",
+            "title": "Types of Flooring Materials",
+            "category": "Company News",
+            "date": "December 1, 2019",
+            "comments": "No comments",
+            "text": "Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet in sem parturient  integer duis et nulla..."
+          })
+				</div>
+				<div class="news-grid__pagination">
+					<span class="news-grid__pagination-num">1</span>
+					<span class="news-grid__pagination-num">2</span>
+					<span class="news-grid__pagination-num">3</span>
+					<span class="news-grid__pagination-num">4</span>
+					<img class="news-grid__pagination-arrow" src="./img/icons/slider-arrow-right.svg" alt="" />
+				</div>
+			</div>
+
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

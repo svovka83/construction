@@ -1,0 +1,52 @@
+.modal-subscribe {
+	display: none;
+}
+
+.modal-send {
+	display: none;
+}
+
+.modal-bg {
+	position: fixed;
+	inset: 0;
+	background-color: rgb(30, 33, 44, 0.75);
+	z-index: 900;
+}
+
+.modal__inner {
+	text-align: center;
+	width: 486px;
+	min-height: 412px;
+	padding: 48px;
+	border: 1px solid $gray-300;
+	border-radius: 4px;
+	background-color: $white;
+	box-shadow: $box-shadow-third, $box-shadow-fourth, $box-shadow-10, $box-shadow-16;
+	position: absolute;
+	top: 542px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	@media (max-width: 768px) {
+		width: 360px;
+	}
+}
+
+.modal__form {
+	text-align: start;
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px 0;
+}
+
+.modal__close {
+	position: absolute;
+	top: 24px;
+	right: 23px;
+	cursor: pointer;
+	.modal__close-icon {
+		width: 24px;
+		height: 24px;
+		fill: $gray-700;
+	}
+}

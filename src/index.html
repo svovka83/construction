@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- head -->
+	<!-- prettier-ignore -->
+	@@include("components/sections/_head.html", {
+		"title": "CreateX Construction"
+	})
+	<body>
+		<!-- header -->
+		<!-- prettier-ignore -->
+		<header class="header header--sticky header--bg-white">
+			@@include("components/sections/_header.html")
+		</header>
+
+		<main>
+			<!-- hero-slider -->
+			<section class="hero-slider" id="to-top">
+				<div class="container">
+					<div class="hero-slider__content">
+						<h1 class="hero-slider__title">
+							CREATE<span class="hero-slider__title-X">X</span> CONSTRUCTION
+						</h1>
+						<div class="hero-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<p class="hero-slider__text">
+										Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim
+										vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer
+										ipsum elementum felis.
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<p class="hero-slider__text">
+										Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim
+										vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer
+										ipsum elementum felis.
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<p class="hero-slider__text">
+										Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim
+										vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer
+										ipsum elementum felis.
+									</p>
+								</div>
+								<div class="swiper-slide">
+									<p class="hero-slider__text">
+										Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim
+										vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer
+										ipsum elementum felis.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="hero-slider__buttons">
+							<!-- prettier-ignore -->
+							@@include("components/elements/_button.html", {
+								"title": "Learn more about us",
+								"type": "button",
+								"className": "button button--white" })
+							<!-- prettier-ignore -->
+							@@include("components/elements/_button.html", {
+								"title": "SUBMIT REQUEST",
+								"type": "button",
+								"className": "button button--basic" })
+						</div>
+					</div>
+					<div class="hero-slider-pagination"></div>
+				</div>
+				<button class="hero-slider__navBtn hero-slider-prev">
+					<img src="./img/icons/slider-arrow-left.svg" alt="" />
+				</button>
+				<button class="hero-slider__navBtn hero-slider-next">
+					<img src="./img/icons/slider-arrow-right.svg" alt="" />
+				</button>
+				<img class="hero-slider__bg-img" src="./img/pictures/hero-bg.jpg" alt="hero slider background" />
+			</section>
+			<!-- video -->
+			<section class="video container">
+				<!-- title -->
+				<!-- prettier-ignore -->
+				@@include("components/elements/_title-block.html", {
+					"title": "We are Createx Construction Bureau",
+					"subtext": "We are rightfully considered to be the best construction company in the USA."
+				})
+				<div class="video__block">
+					<img class="video__img" src="./img/pictures/video.png" alt="video preview" />
+					@@include("components/elements/_mode-btn.html", { "classNameBtn": "mode-btn mode-btn--play",
+					"classNameImg": "mode-btn-img", "path-img": "./img/icons/play-icon.svg", "alt": "video play icon" })
+					<!-- prettier-ignore -->
+					@@include("components/elements/_mode-btn.html", { "classNameBtn": "mode-btn mode-btn--mute",
+					"path-img": "./img/icons/on-mute.svg", "alt": "video mute icon" })
+				</div>
+			</section>
+			<!-- values-benefits -->
+			<section class="values-benefits container">
+				<!-- title block -->
+				<!-- prettier-ignore -->
+				@@include("components/elements/_title-block.html", {
+					"title": "Our core values",
+					"subtext": "Our mission is to set the highest standards for construction sphere."
+				})
+				<div class="icon-boxes">
+					<!-- prettier-ignore -->
+					@@include("components/elements/_icon-box.html", {
+						"title": "Quality",
+						"text": "Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.",
+						"classTitle": "icon-box__title--dark",
+						"svgId": "#ic-like"
+					})
+					<div class="vertical-line"></div>
+					<!-- prettier-ignore -->
+					@@include("components/elements/_icon-box.html", {
+						"title": "Safety",
+						"text": "Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.",
+						"classTitle": "icon-box__title--dark",
+						"svgId": "#ic-hand"
+					})
+					<div class="vertical-line"></div>
+					<!-- prettier-ignore -->
+					@@include("components/elements/_icon-box.html", {
+						"title": "Comfort",
+						"text": "Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.",
+						"classTitle": "icon-box__title--dark",
+						"svgId": "#ic-slippers"
+					})
+				</div>
+			</section>
+			<!-- request form -->
+			<section class="request-form container">
+				<!-- title h3 -->
+				<!-- prettier-ignore -->
+				@@include("./components/elements/_title.html", {
+					"title": "Want to know more? Ask us a question:",
+					"classNameTitle": "title title--h3"
+				})
+				<form class="request-form__content">
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_input-block.html", {
+							"classBlock": "input-block input-block--small",
+							"label": "Name",
+							"classId": "name",
+							"classInput": "input input--small input--success",
+							"placeholder": "Your name",
+							"classTextSuccess": "text-success text-success--success",
+							"textSuccess": "Looks good!"
+					})
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_input-block.html", {
+							"classBlock": "input-block input-block--small",
+							"label": "Phone",
+							"classId": "phone",
+							"classInput": "input input--small",
+							"placeholder": "Your phone",
+							"classTextSuccess": "text-success",
+							"textSuccess": "I am a transparent text.",
+							"type": "text"
+					})
+					<!-- <p id="result"></p> -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_input-block.html", {
+							"classBlock": "input-block input-block--small",
+							"label": "Message",
+							"classId": "message",
+							"classInput": "input input--small input--error",
+							"placeholder": "Your message",
+							"classTextSuccess": "text-success text-success--error",
+							"textSuccess": "Please provide a valid input."
+					})
+					<!-- prettier-ignore -->
+					@@include("components/elements/_button.html", {
+							"title": "Send",
+							"type": "submit",
+							"className": "button button--basic button--regular"
+						})
+				</form>
+			</section>
+			<!-- services -->
+			<section class="services">
+				<div class="container">
+					<!-- title block -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_title-block.html", {
+						"title": "Our services",
+						"subtext": "Createx Construction Bureau is a construction giant with a full range of construction services."
+					})
+					<div class="services-list">
+						<!-- prettier-ignore -->
+						@@include("components/elements/_service-item.html", {
+							"classItem": "service-item service-item--no-active",
+							"title": "Construction",
+							"pathImg": "./img/icons/service-icons/construction.svg",
+							"alt": "bricks"
+						})
+						<!-- prettier-ignore -->
+						@@include("components/elements/_service-item.html", {
+							"classItem": "service-item service-item--no-active",
+							"title": "Project Development",
+							"pathImg": "./img/icons/service-icons/plan.svg",
+							"alt": "project development"
+						})
+						<!-- prettier-ignore -->
+						@@include("components/elements/_service-item.html", {
+							"classItem": "service-item service-item--active",
+							"title": "Interior Design",
+							"pathImg": "./img/icons/service-icons/pantone.svg",
+							"alt": "interior design"
+						})
+						<!-- prettier-ignore -->
+						@@include("components/elements/_service-item.html", {
+							"classItem": "service-item service-item--no-active",
+							"title": "Repairs",
+							"pathImg": "./img/icons/service-icons/painting.svg",
+							"alt": "repairs"
+						})
+					</div>
+					<div class="text-button-block">
+						<!-- title h3 -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+							"title": "Learn more about our services",
+							"classNameTitle": "title title--h3"
+						})
+						<!-- basic button -->
+						<!-- prettier-ignore -->
+						@@include("components/elements/_button.html", {
+							"title": "View services",
+							"type": "button",
+							"className": "button button--basic"
+						})
+					</div>
+				</div>
+				<img class="services__bg-img" src="./img/pictures/services-bg.jpg" alt="services background" />
+			</section>
+			<!-- portfolio -->
+			<section class="portfolio container">
+				<div class="potrfolio__top">
+					<!-- title h1 -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "Browse our selected projects and learn more about our work",
+						"classNameTitle": "title title--h1 title--w705"
+					})
+					<!-- nav buttons -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_nav-buttons.html", {
+						"classLeft": "nav-button nav-button--left portfolio-slider-button-prev",
+						"classRight": "nav-button nav-button--right portfolio-slider-button-next"
+					})
+				</div>
+				<div class="portfolio__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Red Finger Building",
+								"text": "Business Centers",
+								"path": "./img/pictures/portfolio/portfolio-1.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Cubes Building",
+								"text": "Business Centers",
+								"path": "./img/pictures/portfolio/portfolio-2.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "The Pencil Building",
+								"text": "Stores & Malls",
+								"path": "./img/pictures/portfolio/portfolio-3.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Luxury Beach House",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-4.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Modern Cottege",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-5.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Brown and Gray Painted House",
+								"text": "Private houses",
+								"path": "./img/pictures/portfolio/portfolio-6.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Kids Bedroom With Decorations",
+								"text": "Apartments & flats",
+								"path": "./img/pictures/portfolio/portfolio-7.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "Cubes Building",
+								"text": "Business Centers",
+								"path": "./img/pictures/portfolio/portfolio-8.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+						<div class="swiper-slide">
+							<!-- portfolio slide -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_portfolio-card.html", {
+								"title": "The Pencil Building",
+								"text": "Stores & Malls",
+								"path": "./img/pictures/portfolio/portfolio-9.jpg",
+								"classCard": "portfolio-card--no-hover"
+							})
+						</div>
+					</div>
+				</div>
+				<div class="text-button-block">
+					<!-- title h3 -->
+					<!-- prettier-ignore -->
+					@@include("./components/elements/_title.html", {
+						"title": "Explore all our works",
+						"classNameTitle": "title title--h3"
+					})
+					<!-- basic button -->
+					<!-- prettier-ignore -->
+					@@include("components/elements/_button.html", {
+						"title": "View portfolio",
+						"type": "button",
+						"className": "button button--basic"
+					})
+				</div>
+			</section>
+			<!-- clients and testimonials -->
+			<div class="clients-testimonials">
+				<div class="container clients-testimonials__inner">
+					<section class="clients">
+						<!-- title h1 -->
+						<!-- prettier-ignore -->
+						@@include("./components/elements/_title.html", {
+							"title": "Supported by 12+ partners",
+							"classNameTitle": "title title--h1"
+						})
+						<!-- clients-icons -->
+						<!-- prettier-ignore -->
+						@@include("./components/sections/_clients-icons.html")
+					</section>
+					<section class="testimonials">
+						<div class="testimonials__content">
+							<!-- title h1 -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
+								"title": "What our clients are saying",
+								"classNameTitle": "title title--h1"
+							})
+							<div class="testimonials-slider testimonials-buttons-positioner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+											"path": "../../img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
+									</div>
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+											"path": "../../img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
+									</div>
+									<div class="swiper-slide">
+										<!-- testimonials-slide -->
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_testimonials-slide.html", {
+											"path": "../../img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
+									</div>
+								</div>
+								<!-- buttons -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_nav-buttons.html", {
+									"classLeft": "nav-button nav-button--transperant testimonials-button-prev",
+									"classRight": "nav-button nav-button--transperant testimonials-button-next"
+								})
+							</div>
+						</div>
+						<img
+							class="testimonials__img"
+							src="./img/pictures/testimonials/right-image.jpg"
+							alt="testimonials image" />
+					</section>
+				</div>
+			</div>
+			<!-- figures and news -->
+			<div class="figures-news">
+				<div class="container">
+					<div class="figures-news__inner">
+						<!-- figures -->
+						<section class="figures">
+							<!-- title h1 -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
+								"title": "Some facts and figures",
+								"classNameTitle": "title title--h1"
+							})
+							<div class="figures__block">
+								<!-- figure -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_figure.html", {
+									"path": "./img/icons/figures/circle-progress-1.png",
+									"text": "Totally satisfied clients"
+								})
+								<!-- figure -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_figure.html", {
+									"path": "./img/icons/figures/circle-progress-2.png",
+									"text": "Years of experience"
+								})
+								<!-- figure -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_figure.html", {
+									"path": "./img/icons/figures/circle-progress-3.png",
+									"text": "Working hours spent"
+								})
+								<!-- figure -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_figure.html", {
+									"path": "./img/icons/figures/circle-progress-4.png",
+									"text": "Succeeded projects"
+								})
+							</div>
+						</section>
+						<!-- news -->
+						<section class="news">
+							<!-- title h1 -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
+								"title": "Recent news",
+								"classNameTitle": "title title--h1"
+							})
+							<div class="news-cards-block">
+								<!-- post-card-large -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_post-card.html", {
+									"classCard": "post-card--large",
+									"path": "big-1.jpg",
+									"title": "How to Build Climate Change-Resilient Infrastructure",
+									"category": "Industry News",
+									"date": "June 24, 2020",
+									"comments": "4 comments",
+									"text": "Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,\n venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...",
+									"classText": "post-card__text",
+								})
+								<!-- post-card-small -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_post-card.html", {
+									"classCard": "post-card--small",
+									"path": "small-1.jpg",
+									"title": "How Construction Can Help Itself",
+									"classTitle": "post-card__heading--small",
+									"category": "Innovation",
+									"date": "June 12, 2020",
+									"comments": "No comments",
+									"text": "",
+									"classText": "post-card__text post-card__text--small-no-text",
+								})
+								<!-- post-card-small -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_post-card.html", {
+									"classCard": "post-card--small",
+									"path": "small-2.jpg",
+									"title": "Types of Flooring Materials",
+									"classTitle": "post-card__heading--small",
+									"category": "Company News",
+									"date": "December 1, 2019",
+									"comments": "No comments",
+									"text": "",
+									"classText": "post-card__text post-card__text--small-no-text",
+								})
+							</div>
+							<div class="text-button-block">
+								<!-- title h3 -->
+								<!-- prettier-ignore -->
+								@@include("./components/elements/_title.html", {
+									"title": "Explore all our news posts",
+									"classNameTitle": "title title--h3"
+								})
+								<!-- basic button -->
+								<!-- prettier-ignore -->
+								@@include("components/elements/_button.html", {
+									"title": "View all news",
+									"type": "button",
+									"className": "button button--basic"
+								})
+							</div>
+						</section>
+					</div>
+				</div>
+				<img class="figures-news-bg" src="./img/pictures/strange-bg.png" alt="figures news bg" />
+			</div>
+			<!-- application -->
+			@@include("./components/sections/_application.html")
+		</main>
+
+		<!-- footer -->
+		@@include("./components/sections/_footer.html")
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>

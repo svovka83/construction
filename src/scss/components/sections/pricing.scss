@@ -1,0 +1,45 @@
+.pricing {
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.table-wrapper {
+		overflow-x: scroll;
+		scrollbar-width: none;
+		width: 100%;
+	}
+}
+
+.table {
+	position: relative;
+	width: 1230px;
+	margin: 0 auto 128px auto;
+	background-color: $white;
+	border: 1px solid $gray-300;
+	border-radius: 4px;
+	box-shadow: $box-shadow-start, $box-shadow-end;
+	z-index: 1;
+	@media (max-width: 1280px) {
+		width: 1080px;
+	}
+	@media (max-width: 1120px) {
+		width: 900px;
+	}
+	@media (max-width: 950px) {
+		width: 750px;
+	}
+}
+
+.table__cell {
+	padding-top: 33px;
+	padding-bottom: 24px;
+}
+
+.table__first-cell {
+	@extend %tmpUbuntu-700-minlarge;
+	color: $gray-900;
+	text-align: start;
+	position: relative;
+	transform: translateY(31px);
+	padding-left: 23px;
+}

@@ -1,0 +1,128 @@
+.input-block {
+	position: relative;
+	@extend %tmpUbuntu-400;
+	&--base {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	&--small {
+		font-size: 14px;
+		line-height: 150%;
+	}
+	&--extrasmall {
+		font-size: 12px;
+		line-height: 150%;
+	}
+	&--inline-block {
+		display: inline-block;
+	}
+	@media (max-width: 768px) {
+		font-size: 14px;
+		line-height: 150%;
+	}
+	@media (max-width: 375px) {
+		font-size: 12px;
+		line-height: 150%;
+	}
+}
+
+.label {
+	display: block;
+	color: $gray-800;
+	margin-bottom: 8px;
+}
+
+.input {
+	padding: 0 16px;
+	color: $gray-800;
+	background-color: $gray-200;
+	border: 1px solid $gray-400;
+	border-radius: 4px;
+	&--width-100 {
+		width: 100%;
+	}
+	&--dark-theme {
+		border: 1px solid #ffffff33;
+		background-color: #393c46;
+	}
+	&--base {
+		height: 52px;
+	}
+	&--small {
+		height: 44px;
+	}
+	&--extrasmall {
+		height: 36px;
+		padding: 0 12px;
+	}
+	&--dropdown {
+		background-image: url("../../../img/icons/dropdown-mark.png");
+		background-repeat: no-repeat;
+		background-position: right 16px center;
+	}
+	&--success {
+		background-image: url("../../../img/icons/success-mark.png");
+		background-repeat: no-repeat;
+		background-position: right 16px center;
+	}
+	&--error {
+		background-image: url("../../../img/icons/danger-mark.png");
+		background-repeat: no-repeat;
+		background-position: right 16px center;
+		border: 1px solid #ff4242;
+	}
+	&::placeholder {
+		color: $gray-600;
+	}
+	&--dropdown-placeholder {
+		&::placeholder {
+			color: $gray-800;
+		}
+	}
+	&:focus {
+		background-color: $white;
+		border: 1px solid #ff5a3066;
+		box-shadow: $box-shadow-start, $box-shadow-focus;
+	}
+	&--no-right-radiuses {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	@media (max-width: 1280px) {
+		width: 390px;
+	}
+	@media (max-width: 768px) {
+		width: 260px;
+		height: 44px;
+		&--success {
+			background-position: right 12px center;
+		}
+		&--error {
+			background-position: right 12px center;
+		}
+	}
+	@media (max-width: 375px) {
+		height: 36px;
+		padding: 0 12px;
+		&--success {
+			background-position: right 8px center;
+		}
+		&--error {
+			background-position: right 8px center;
+		}
+	}
+}
+
+.text-success {
+	position: absolute;
+	font-size: 12px;
+	line-height: 150%;
+	margin-top: 4px;
+	color: transparent;
+	&--success {
+		color: #03cea4;
+	}
+	&--error {
+		color: #ff4242;
+	}
+}

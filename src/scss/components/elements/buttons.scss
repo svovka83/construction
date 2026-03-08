@@ -1,0 +1,116 @@
+.button {
+	@extend %tmpUbuntu-700;
+	font-size: 16px;
+	line-height: 50px;
+	padding-right: 39px;
+	padding-left: 39px;
+	letter-spacing: 0.5px;
+	border-radius: 4px;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	@media (max-width: 768px) {
+		font-size: 14px;
+		line-height: 42px;
+		padding-right: 31px;
+		padding-left: 31px;
+	}
+
+	@media (max-width: 375px) {
+		font-size: 12px;
+		line-height: 34px;
+		padding-right: 23px;
+		padding-left: 23px;
+	}
+
+	&--regular {
+		font-size: 14px;
+		line-height: 42px;
+		padding-right: 31px;
+		padding-left: 31px;
+	}
+	&--small {
+		font-size: 12px !important;
+		line-height: 34px !important;
+		padding-right: 23px !important;
+		padding-left: 23px !important;
+	}
+	&--basic {
+		color: $white;
+		border: 1px solid $primary;
+		background-color: $primary;
+		&:hover {
+			border-color: $primary-hover;
+			background-color: $primary-hover;
+		}
+		&:active {
+			border-color: $primary-hover;
+			background-color: $primary-hover;
+		}
+	}
+	&--basic-reverse {
+		color: $primary;
+		border: 1px solid $primary;
+		background-color: $white;
+		&:hover {
+			color: $white;
+			background-color: $primary;
+		}
+		&:active {
+			color: $white;
+			background-color: $primary;
+		}
+	}
+	&--white {
+		color: $white;
+		border: 1px solid $white;
+		background-color: transparent;
+		&:hover {
+			color: $gray-800;
+			background-color: $white;
+		}
+		&:active {
+			color: $gray-900;
+			background-color: $white;
+		}
+	}
+	&--width-180 {
+		width: 180px;
+	}
+	&--long {
+		padding-right: 111px;
+		padding-left: 111px;
+	}
+	&--no-left-radiuses {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		padding-right: 23px;
+		padding-left: 23px;
+	}
+	&--short {
+		padding-right: 23px;
+		padding-left: 23px;
+	}
+	&--centered-bottom {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 50%);
+		z-index: 50;
+		@media (max-width: 800px) {
+			font-size: 14px;
+			line-height: 42px;
+			padding-right: 31px;
+			padding-left: 31px;
+		}
+		@media (max-width: 421px) {
+			font-size: 12px;
+			line-height: 34px;
+			padding-right: 23px;
+			padding-left: 23px;
+		}
+	}
+	&--modal {
+		margin-top: 16px;
+	}
+}

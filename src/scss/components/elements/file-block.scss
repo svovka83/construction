@@ -1,0 +1,18 @@
+#attach-modal {
+	display: none;
+}
+
+.label-file {
+	@extend %tmpUbuntu-400-small;
+	color: $gray-800;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 0 12px;
+}
+
+.attach-icon {
+	width: 24px;
+	height: 24px;
+	fill: $primary;
+}

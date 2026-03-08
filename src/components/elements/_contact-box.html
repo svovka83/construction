@@ -1,0 +1,12 @@
+<div class="contact-box">
+	<!-- prettier-ignore -->
+	@@include("../../components/elements/_title.html", {
+    "title": "@@title",
+    "classNameTitle": "@@classTitle"
+  })
+	<p class="contact-box__address">@@address</p>
+	<a class="contact-box__on-map" href="#!">See on the map</a>
+	<p class="contact-box__call"><span class="contact-box__pale">Call: </span><a href="tel:@@number">@@phone</a></p>
+	<p class="contact-box__call"><span class="contact-box__pale">Email: </span><a href="">hello@createx.com</a></p>
+	<p class="contact-box__call"><span class="contact-box__pale">Schedule: </span>@@time</p>
+</div>

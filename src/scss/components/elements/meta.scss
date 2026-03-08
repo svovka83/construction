@@ -1,0 +1,35 @@
+.meta {
+	@extend %tmpUbuntu-400-regular;
+	color: $gray-700;
+	display: flex;
+	align-items: center;
+	.meta__category {
+		@extend %tmpUbuntu-700-regular;
+		&--primary {
+			color: $primary;
+		}
+	}
+	.meta__divider {
+		width: 1px;
+		height: 16px;
+		margin-left: 14px;
+		margin-right: 10px;
+		background-color: $gray-700;
+		@media (max-width: 423px) {
+			display: none;
+		}
+	}
+	.meta__icon {
+		width: 20px;
+		height: 20px;
+		margin-right: 7px;
+		fill: $gray-700;
+		@media (max-width: 423px) {
+			margin-left: 7px;
+		}
+		@media (max-width: 387px) {
+			margin-right: 3px;
+			margin-left: 3px;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+// figures
+
+.figures {
+	text-align: center;
+}
+
+.figures__block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+	margin-top: 59px;
+}
+
+@media (max-width: 768px) {
+	.figures__block {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 48px;
+		margin-top: 59px;
+	}
+}
