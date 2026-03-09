@@ -829,7 +829,7 @@ button {
 
 .service-item:hover {
   color: #fff;
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/icons/service-icons/service-hover.jpg");
+  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/pictures/backgrounds/service-hover-bg.jpg");
   border: 1px solid #1e212c;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.0509803922), 0 12px 10px -6px rgba(30, 33, 44, 0.0784313725), 0 26px 24px -10px rgba(30, 33, 44, 0.1019607843), 0 60px 60px -20px rgba(30, 33, 44, 0.1607843137);
 }
@@ -1063,15 +1063,15 @@ button {
 }
 
 .checkbox--unchecked::after {
-  content: url("../../../img/icons/checkboxes/unchecked.svg");
+  content: url("../img/icons/checkboxes/unchecked.svg");
 }
 
 .checkbox--checked::after {
-  content: url("../../../img/icons/checkboxes/checked.svg");
+  content: url("../img/icons/checkboxes/checked.svg");
 }
 
 .checkbox--disabled::after {
-  content: url("../../../img/icons/checkboxes/disabled.svg");
+  content: url("../img/icons/checkboxes/disabled.svg");
 }
 
 .step {
