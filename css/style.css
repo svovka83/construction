@@ -3854,7 +3854,7 @@ button {
 }
 
 @media (max-width: 425px) {
-  .portfolio-card {
+  .portfolio-card--grid {
     width: 355px;
   }
 }
