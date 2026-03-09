@@ -38,30 +38,30 @@
 				<div class="tabs container">
 					<!-- prettier-ignore -->
 					@@include("./components/elements/_tab.html", {
-								"title": "All Projects",
-								"svgId": "#ic-house",
-								"classTab": "tab--primary",
-								"classIcon": "tab__icon--primary",
-								"classTitle": "tab__title--primary"
-							})
-							@@include("./components/elements/_tab.html", {
-								"title": "Construction",
-								"svgId": "#ic-construction"
-							})
-							@@include("./components/elements/_tab.html", {
-								"title": "Project Development",
-								"svgId": "#ic-plan"
-							})
-							@@include("./components/elements/_tab.html", {
-								"title": "Interior Design",
-								"svgId": "#ic-pantone"
-							})
-							@@include("./components/elements/_tab.html", {
-								"title": "Repairs",
-								"svgId": "#ic-panting"
-							})
+						"title": "All Projects",
+						"svgId": "#ic-house"
+					})
+					@@include("./components/elements/_tab.html", {
+						"title": "Construction",
+						"svgId": "#ic-construction"
+					})
+					@@include("./components/elements/_tab.html", {
+						"title": "Project Development",
+						"svgId": "#ic-plan"
+					})
+					@@include("./components/elements/_tab.html", {
+						"title": "Interior Design",
+						"svgId": "#ic-pantone"
+					})
+					@@include("./components/elements/_tab.html", {
+						"title": "Repairs",
+						"svgId": "#ic-panting"
+					})
 				</div>
-				<img class="top__bg" src="./img/pictures/top-bg/portfolio-bg.png" alt="background of top" />
+				<img
+					class="top__bg top__bg--portfolio"
+					src="./img/pictures/top-bg/portfolio-bg.png"
+					alt="background of top" />
 			</section>
 			<!-- portfolio-grid -->
 			<div class="portfolio-grid container">
@@ -71,48 +71,56 @@
 					@@include("./components/elements/_portfolio-card.html", {
             "title": "Cubes Building",
             "text": "Business Centers",
-            "path": "./img/pictures/portfolio/portfolio-2.jpg"
+            "path": "./img/pictures/portfolio/portfolio-2.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Modern Cottage",
             "text": "Private houses",
-            "path": "./img/pictures/portfolio/portfolio-5.jpg"
+            "path": "./img/pictures/portfolio/portfolio-5.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Luxury Beach House",
             "text": "Private houses",
-            "path": "./img/pictures/portfolio/portfolio-4.jpg"
+            "path": "./img/pictures/portfolio/portfolio-4.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Modern Double Bedroom",
             "text": "Apartments & flats",
-            "path": "./img/pictures/portfolio/portfolio-8.jpg"
+            "path": "./img/pictures/portfolio/portfolio-8.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Kids Bedroom With Decorations",
             "text": "Apartments & flats",
-            "path": "./img/pictures/portfolio/portfolio-7.jpg"
+            "path": "./img/pictures/portfolio/portfolio-7.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "The Pencil Building",
             "text": "Stores & Malls",
             "path": "./img/pictures/portfolio/portfolio-3.jpg",
-            "classCard": "portfolio-card--active portfolio-card--visible"
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Red Finger Building",
             "text": "Business Centers",
-            "path": "./img/pictures/portfolio/portfolio-1.jpg"
+            "path": "./img/pictures/portfolio/portfolio-1.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Scandinavian Style Interior",
             "text": "Private houses",
-            "path": "./img/pictures/portfolio/portfolio-9.jpg"
+            "path": "./img/pictures/portfolio/portfolio-9.jpg",
+						"classCard": "portfolio-card--grid"
           })
           @@include("./components/elements/_portfolio-card.html", {
             "title": "Brown and Gray Painted House",
             "text": "Private houses",
-            "path": "./img/pictures/portfolio/portfolio-6.jpg"
+            "path": "./img/pictures/portfolio/portfolio-6.jpg",
+						"classCard": "portfolio-card--grid"
           })
 				</div>
 				<button class="portfolio-grid__convert-button">
@@ -131,40 +139,40 @@
 							<!-- title h1 -->
 							<!-- prettier-ignore -->
 							@@include("./components/elements/_title.html", {
-              "title": "What our clients are saying",
-              "classNameTitle": "title title--h1"
-            })
+								"title": "What our clients are saying",
+								"classNameTitle": "title title--h1"
+							})
 							<div class="testimonials-slider testimonials-buttons-positioner">
 								<div class="swiper-wrapper">
 									<div class="swiper-slide">
 										<!-- testimonials-slide -->
 										<!-- prettier-ignore -->
 										@@include("./components/elements/_testimonials-slide.html", {
-                  "path": "../../img/pictures/testimonials/profile.png",
-                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
-                  "name": "Shawn Edwards",
-                  "position": "Position, Company name"
-                })
+											"path": "./img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
 									</div>
 									<div class="swiper-slide">
 										<!-- testimonials-slide -->
 										<!-- prettier-ignore -->
 										@@include("./components/elements/_testimonials-slide.html", {
-                  "path": "../../img/pictures/testimonials/profile.png",
-                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
-                  "name": "Shawn Edwards",
-                  "position": "Position, Company name"
-                })
+											"path": "./img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
 									</div>
 									<div class="swiper-slide">
 										<!-- testimonials-slide -->
 										<!-- prettier-ignore -->
 										@@include("./components/elements/_testimonials-slide.html", {
-                  "path": "../../img/pictures/testimonials/profile.png",
-                  "text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
-                  "name": "Shawn Edwards",
-                  "position": "Position, Company name"
-                })
+											"path": "./img/pictures/testimonials/profile.png",
+											"text": "Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum \nconsequat minim laboris cillum laboris voluptate minim proident exercitation ullamco.",
+											"name": "Shawn Edwards",
+											"position": "Position, Company name"
+										})
 									</div>
 								</div>
 								<!-- buttons -->

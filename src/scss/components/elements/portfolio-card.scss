@@ -37,17 +37,16 @@
 	&--no-hover {
 		pointer-events: none;
 	}
-	&--active .portfolio-card__img {
-		max-height: 277px;
-	}
-	&--visible .button-in-active {
-		opacity: 1;
-	}
 	&:hover .portfolio-card__img {
 		max-height: 277px;
 	}
 	&:hover .button-in-active {
 		opacity: 1;
+	}
+	&--grid {
+		@media (max-width: 425px) {
+			width: 355px;
+		}
 	}
 }
 

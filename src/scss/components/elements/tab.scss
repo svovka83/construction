@@ -12,18 +12,16 @@
 	z-index: 30;
 	cursor: pointer;
 	&:hover {
-		.tab__inner {
-			.tab__icon {
-				fill: $primary-hover;
-			}
-			.tab__title {
-				color: $gray-900;
-			}
-		}
-	}
-	&--primary {
 		background-color: $primary;
 		box-shadow: $box-shadow-third, $box-primary-8, $box-primary-10, $box-primary-16;
+		.tab__inner {
+			.tab__icon {
+				fill: $white;
+			}
+			.tab__title {
+				color: $white;
+			}
+		}
 	}
 	.tab__inner {
 		text-align: center;
@@ -32,16 +30,10 @@
 			height: 48px;
 			margin-bottom: 15px;
 			fill: $primary;
-			&--primary {
-				fill: $white;
-			}
 		}
 		.tab__title {
 			@extend %tmpUbuntu-700-regular;
 			color: $gray-600;
-			&--primary {
-				color: $white;
-			}
 		}
 	}
 }
