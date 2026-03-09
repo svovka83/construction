@@ -883,14 +883,6 @@ button {
   pointer-events: none;
 }
 
-.portfolio-card--active .portfolio-card__img {
-  max-height: 277px;
-}
-
-.portfolio-card--visible .button-in-active {
-  opacity: 1;
-}
-
 .portfolio-card:hover .portfolio-card__img {
   max-height: 277px;
 }
@@ -3858,6 +3850,12 @@ button {
 @media (max-width: 460px) {
   .contact-form__form {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio-card {
+    width: 355px;
   }
 }
 
