@@ -25,17 +25,17 @@
 	margin-top: 3px;
 	&--unchecked {
 		&::after {
-			content: url("../../../img/icons/checkboxes/unchecked.svg");
+			content: url("../img/icons/checkboxes/unchecked.svg");
 		}
 	}
 	&--checked {
 		&::after {
-			content: url("../../../img/icons/checkboxes/checked.svg");
+			content: url("../img/icons/checkboxes/checked.svg");
 		}
 	}
 	&--disabled {
 		&::after {
-			content: url("../../../img/icons/checkboxes/disabled.svg");
+			content: url("../img/icons/checkboxes/disabled.svg");
 		}
 	}
 }
