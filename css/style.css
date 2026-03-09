@@ -1157,17 +1157,17 @@ button {
   cursor: pointer;
 }
 
+.tab:hover {
+  background-color: #ff5a30;
+  box-shadow: 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 12px 10px -6px rgba(255, 90, 48, 0.0784313725), 0 26px 24px -10px rgba(255, 90, 48, 0.1019607843), 0 60px 60px -20px rgba(255, 90, 48, 0.1019607843);
+}
+
 .tab:hover .tab__inner .tab__icon {
-  fill: #fc3300;
+  fill: #fff;
 }
 
 .tab:hover .tab__inner .tab__title {
-  color: #1e212c;
-}
-
-.tab--primary {
-  background-color: #ff5a30;
-  box-shadow: 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 12px 10px -6px rgba(255, 90, 48, 0.0784313725), 0 26px 24px -10px rgba(255, 90, 48, 0.1019607843), 0 60px 60px -20px rgba(255, 90, 48, 0.1019607843);
+  color: #fff;
 }
 
 .tab .tab__inner {
@@ -1181,16 +1181,8 @@ button {
   fill: #ff5a30;
 }
 
-.tab .tab__inner .tab__icon--primary {
-  fill: #fff;
-}
-
 .tab .tab__inner .tab__title {
   color: #9a9ca5;
-}
-
-.tab .tab__inner .tab__title--primary {
-  color: #fff;
 }
 
 .statistic {
@@ -3363,6 +3355,17 @@ button {
 
   .team__cards-block {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 914px) {
+  .top__bg--portfolio {
+    width: 100%;
+    height: 100%;
+    right: auto;
+    left: 0;
+    object-fit: cover;
+    object-position: left;
   }
 }
 
