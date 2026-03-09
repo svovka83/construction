@@ -180,7 +180,7 @@ select {
 .sections-title,
 .button,
 .icon-box__title,
-.service-item__title,
+.service-item .service-item__title,
 .portfolio-card .portfolio-card__title,
 .testimonials-slide .testimonials-slide__name,
 .post-card .post-card__content .post-card__heading,
@@ -809,31 +809,33 @@ button {
   width: 285px;
   height: 285px;
   border-radius: 4px;
-}
-
-.service-item--no-active {
   color: #1e212c;
   background-color: #fff;
   border: 1px solid #e5e8ed;
-  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.0509803922), 0 12px 10px -6px rgba(30, 33, 44, 0.0784313725);
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
 }
 
-.service-item--active {
-  color: #fff;
-  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/icons/service-icons/service-hover.jpg");
-  border: 1px solid #1e212c;
-  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.0509803922), 0 12px 10px -6px rgba(30, 33, 44, 0.0784313725);
-}
-
-.service-item__img {
+.service-item .service-item__icon {
   width: 52px;
   height: 52px;
+  fill: #ff5a30;
   margin-bottom: 21px;
 }
 
-.service-item__title {
+.service-item .service-item__title {
   font-size: 20px;
   line-height: 150%;
+}
+
+.service-item:hover {
+  color: #fff;
+  background: linear-gradient(rgba(30, 33, 44, 0.6), rgba(30, 33, 44, 0.6)), url("../img/icons/service-icons/service-hover.jpg");
+  border: 1px solid #1e212c;
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.0509803922), 0 12px 10px -6px rgba(30, 33, 44, 0.0784313725), 0 26px 24px -10px rgba(30, 33, 44, 0.1019607843), 0 60px 60px -20px rgba(30, 33, 44, 0.1607843137);
+}
+
+.service-item:hover .service-item__icon {
+  fill: #fff;
 }
 
 .portfolio-card {
