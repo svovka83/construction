@@ -1585,6 +1585,10 @@ button {
   background-color: #f4f5f6;
 }
 
+.header--translucent-gray {
+  background-color: rgba(244, 245, 246, 0.5019607843);
+}
+
 .header {
   z-index: 100;
 }
@@ -1899,7 +1903,6 @@ button {
 }
 
 .top {
-  max-width: 1920px;
   min-height: 600px;
   position: relative;
   transform: translateY(-92px);
@@ -2276,7 +2279,6 @@ button {
 
 .constructions {
   position: relative;
-  max-width: 1920px;
   min-height: 2247px;
   padding-top: 27px;
   padding-bottom: 180px;
