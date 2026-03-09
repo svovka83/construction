@@ -311,6 +311,12 @@ button {
   border: none;
 }
 
+.container-big {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   max-width: 1250px;
   padding-left: 10px;
@@ -1752,7 +1758,6 @@ button {
 
 .application {
   position: relative;
-  max-width: 1920px;
   min-height: 826px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -2148,7 +2153,6 @@ button {
 
 .services {
   position: relative;
-  max-width: 1920px;
   min-height: 880px;
   background-color: rgba(244, 245, 246, 0.1);
   text-align: center;
@@ -2216,7 +2220,6 @@ button {
 }
 
 .clients-testimonials {
-  max-width: 1920px;
   min-height: 934px;
   padding-top: 80px;
   padding-bottom: 121px;
@@ -2235,7 +2238,6 @@ button {
 
 .figures-news {
   position: relative;
-  max-width: 1920px;
   min-height: 1580px;
   padding-top: 180px;
   padding-bottom: 120px;
