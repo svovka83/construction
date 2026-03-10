@@ -8,31 +8,37 @@
 	<body>
 		<!-- header -->
 		<!-- prettier-ignore -->
-		<header class="header" id="to-top">@@include("components/sections/_header.html")</header>
+		<header class="header header--translucent-gray">@@include("components/sections/_header.html")</header>
 
 		<main>
 			<!-- top of page -->
-			<section class="top">
-				<div class="container">
-					<div class="top__content">
-						<p class="top__navigation">
-							<a class="top__navigation-natural" href="./">Homepage</a>
-							<span class="top__navigation-pale top__navigation--slash">/</span>
-							<a class="top__navigation-pale" href="./project_v1.html">Work</a>
-						</p>
-						<!-- title top -->
-						<!-- prettier-ignore -->
-						@@include("./components/elements/_title.html", {
-									"title": "OUR WORK",
-									"classNameTitle": "title--top"
-								})
-						<!-- subtext -->
-						<!-- prettier-ignore -->
-						@@include("./components/elements/_subtext.html", {
-									"subtext": "Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.",
-									"classNameSubtext": "subtext--top"
-								})
+			<section class="top" id="to-top">
+				<div class="top__inner container-big">
+					<div class="container">
+						<div class="top__content">
+							<p class="top__navigation">
+								<a class="top__navigation-natural" href="./">Homepage</a>
+								<span class="top__navigation-pale top__navigation--slash">/</span>
+								<a class="top__navigation-pale" href="./project_v1.html">Work</a>
+							</p>
+							<!-- title top -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
+							"title": "OUR WORK",
+							"classNameTitle": "title--top"
+						})
+							<!-- subtext -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_subtext.html", {
+							"subtext": "Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.",
+							"classNameSubtext": "subtext--top"
+						})
+						</div>
 					</div>
+					<img
+						class="top__bg top__bg--portfolio"
+						src="./img/pictures/top-bg/portfolio-bg.png"
+						alt="background of top" />
 				</div>
 				<!-- tabs -->
 				<div class="tabs container">
@@ -58,10 +64,6 @@
 						"svgId": "#ic-panting"
 					})
 				</div>
-				<img
-					class="top__bg top__bg--portfolio"
-					src="./img/pictures/top-bg/portfolio-bg.png"
-					alt="background of top" />
 			</section>
 			<!-- portfolio-grid -->
 			<div class="portfolio-grid container">
