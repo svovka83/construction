@@ -1,24 +1,34 @@
 .checkbox-block {
-	display: flex;
+	display: grid;
+	grid-template-columns: 20px 1fr;
 	align-items: start;
-	gap: 0 12px;
+	gap: 0 8px;
+	cursor: pointer;
 	input {
 		display: none;
 	}
 	.checkbox__text {
 		@extend %tmpUbuntu-400;
-		font-size: 16px;
-		line-height: 160%;
 		color: $gray-800;
+		&--base {
+			font-size: 16px;
+			line-height: 160%;
+		}
+		&--small {
+			font-size: 14px;
+			line-height: 150%;
+		}
 	}
 	.checkbox__icon {
-		width: 28px;
-		height: 28px;
-		fill: $white;
-		stroke: $gray-500;
+		width: 16px;
+		height: 16px;
+
+		--checkbox-bg: #fff;
+		--checkbox-bg-stroke: #b3b7bc;
 	}
+
 	input:checked + .checkbox__icon {
-		fill: $white;
-		stroke: $primary;
+		--checkbox-bg: #ff5a30;
+		--checkbox-bg-stroke: #ff5a30;
 	}
 }
