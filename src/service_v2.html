@@ -257,26 +257,27 @@
 			</section>
 			<!-- pricing-clients -->
 			<section class="pricing-clients">
-				<div class="container pricing-clients__inner">
-					<section class="pricing">
-						<!-- title block -->
-						<!-- prettier-ignore -->
-						@@include("components/elements/_title-block.html", {
+				<div class="container-big pricing-clients__outer">
+					<div class="container pricing-clients__inner">
+						<section class="pricing">
+							<!-- title block -->
+							<!-- prettier-ignore -->
+							@@include("components/elements/_title-block.html", {
 						"title": "Pricing",
 						"classTitle": "sections-title--dark",
 						"subtext": "We offer you three categories of construction."
 					})
-						<div class="table-wrapper">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>
-											<p class="table__first-cell">Items</p>
-										</th>
-										<th class="table__cell">
-											<!-- title h1 -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_title.html", {
+							<div class="table-wrapper">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>
+												<p class="table__first-cell">Items</p>
+											</th>
+											<th class="table__cell">
+												<!-- title h1 -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_title.html", {
 											"title": "BASIC",
 											"classNameTitle": "title--h4"
 										})
@@ -284,11 +285,11 @@
 											"subtext": "$20 per m2",
 											"classNameSubtext": "subtext--table subtext--bold subtext--center"
 										})
-										</th>
-										<th class="table__cell">
-											<!-- title h1 -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_title.html", {
+											</th>
+											<th class="table__cell">
+												<!-- title h1 -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_title.html", {
 											"title": "STANDARD",
 											"classNameTitle": "title--h4"
 										})
@@ -296,11 +297,11 @@
 											"subtext": "$30 per m2",
 											"classNameSubtext": "subtext--table subtext--bold subtext--center"
 										})
-										</th>
-										<th class="table__cell">
-											<!-- title h1 -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_title.html", {
+											</th>
+											<th class="table__cell">
+												<!-- title h1 -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_title.html", {
 											"title": "BUSINESS",
 											"classNameTitle": "title--h4"
 										})
@@ -308,12 +309,12 @@
 											"subtext": "$40 per m2",
 											"classNameSubtext": "subtext--table subtext--bold subtext--center"
 										})
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<!-- prettier-ignore -->
-									@@include("./components/elements/_table-row.html", {
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<!-- prettier-ignore -->
+										@@include("./components/elements/_table-row.html", {
 									"row-title": "Installation plan",
 									"first-col": "",
 									"second-col": "",
@@ -403,50 +404,51 @@
 									"classSVG3": "table-mark-none",
 									"classRow": "table__row--gray"
 								})
-								</tbody>
-								<tfoot>
-									<tr>
-										<th></th>
-										<td class="table__cell">
-											<!-- button -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_button.html", {
+									</tbody>
+									<tfoot>
+										<tr>
+											<th></th>
+											<td class="table__cell">
+												<!-- button -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_button.html", {
 											"title": "send request",
 											"className": "button--small button--basic-reverse"
 										})
-										</td>
-										<td class="table__cell">
-											<!-- button -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_button.html", {
+											</td>
+											<td class="table__cell">
+												<!-- button -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_button.html", {
 											"title": "send request",
 											"className": "button--small button--basic-reverse"
 										})
-										</td>
-										<td class="table__cell">
-											<!-- button -->
-											<!-- prettier-ignore -->
-											@@include("./components/elements/_button.html", {
+											</td>
+											<td class="table__cell">
+												<!-- button -->
+												<!-- prettier-ignore -->
+												@@include("./components/elements/_button.html", {
 											"title": "send request",
 											"className": "button--small button--basic-reverse"
 										})
-										</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
-					<section class="clients">
-						<!-- title h1 -->
-						<!-- prettier-ignore -->
-						@@include("./components/elements/_title.html", {
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section class="clients">
+							<!-- title h1 -->
+							<!-- prettier-ignore -->
+							@@include("./components/elements/_title.html", {
 							"title": "Supported by 12+ partners",
 							"classNameTitle": "title title--h1"
 						})
-						<!-- clients-icons -->
-						<!-- prettier-ignore -->
-						@@include("./components/sections/_clients-icons.html")
-					</section>
+							<!-- clients-icons -->
+							<!-- prettier-ignore -->
+							@@include("./components/sections/_clients-icons.html")
+						</section>
+					</div>
 					<img
 						class="pricing-clients__bg"
 						src="./img/pictures/backgrounds/pricing-clients-bg.png"

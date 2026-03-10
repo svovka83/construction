@@ -1,10 +1,13 @@
 .pricing-clients {
-	position: relative;
 	min-height: 1418px;
 	padding-top: 80px;
 	padding-bottom: 110px;
 	margin-top: -21px;
 	background-color: $gray-200;
+}
+
+.pricing-clients__outer {
+	position: relative;
 }
 
 .pricing-clients__bg {
