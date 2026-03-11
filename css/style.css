@@ -3855,9 +3855,13 @@ button {
 
 @media (max-width: 650px) {
   .menu {
+    width: 90vw;
+    height: 100vh;
     flex-direction: column;
-    gap: 20px 0;
-    padding: 30px 155px;
+    align-items: center;
+    gap: 40px 0;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
     background-color: #fff;
     position: absolute;
     top: 83px;
