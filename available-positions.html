@@ -488,12 +488,29 @@
 	<p class="text-success text-success">Here is noothing. Opps.</p>
 </div>
 
-					<!-- input -->
+					<!-- dropdown -->
 					<!-- prettier-ignore -->
-					<div class="input-block input-block input-block--small">
-	<label class="label" for="email-modal-suscribe">Location*</label>
-	<input class="input input input--small input--width-100 input--dropdown" type="@@type" id="email-modal-suscribe" placeholder="Choose your location" />
-	<p class="text-success text-success">Here is noothing. Opps.</p>
+					<div class="select">
+	<label class="select__label">Location*</label>
+	<div class="select__wrapper">
+		<button type="button" class="select__control">
+			<span class="select__value">Choose your location</span>
+			<svg class="select__chevron">
+				<use xlink:href="./img/sprites/mark.svg#chevron-down"></use>
+			</svg>
+		</button>
+		<div class="select__dropdown" id="@@dropdownList">
+			<button type="button" class="select__option">
+				<span class="select__value">New York</span>
+			</button>
+			<button type="button" class="select__option">
+				<span class="select__value">London</span>
+			</button>
+			<button type="button" class="select__option">
+				<span class="select__value">Ipswich</span>
+			</button>
+		</div>
+	</div>
 </div>
 
 					<!-- input -->
