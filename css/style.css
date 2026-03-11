@@ -139,6 +139,7 @@ select {
 .checkbox-block .checkbox__text,
 .textarea-block,
 .textarea,
+.select__control,
 .hero-slider__content .hero-slider__text,
 .footer__top .footer__top-right .footer__top-right-text,
 .footer__bottom .footer__bottom-left,
@@ -161,7 +162,6 @@ select {
 .contact-box .contact-box__on-map,
 .contact-box .contact-box__call,
 .select__label,
-.select__control,
 .select__dropdown .select__option,
 .footer__middle .footer__middle-inner-block,
 .accordion__text,
@@ -228,7 +228,6 @@ select {
 .contact-box .contact-box__on-map,
 .contact-box .contact-box__call,
 .select__label,
-.select__control,
 .select__dropdown .select__option,
 .footer__middle .footer__middle-inner-block,
 .accordion__text,
@@ -602,46 +601,34 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-.nav-button--left:hover path {
-  fill: #fff;
+.nav-button .nav-button-icon {
+  width: 24px;
+  height: 24px;
+  fill: #424551;
 }
 
-.nav-button--left:hover {
+.nav-button:hover {
   background-color: #ff5a30;
 }
 
-.nav-button--left:active {
+.nav-button:hover .nav-button-icon {
+  fill: #fff;
+}
+
+.nav-button:active {
   background-color: #fc3300;
-}
-
-.nav-button--left:disabled path {
-  fill: #fff;
-}
-
-.nav-button--right:hover path {
-  fill: #fff;
-}
-
-.nav-button--right:hover {
-  background-color: #ff5a30;
-}
-
-.nav-button--right:active {
-  background-color: #fc3300;
-}
-
-.nav-button--right:disabled path {
-  fill: #fff;
-}
-
-.nav-button--transperant:disabled path {
-  fill: #f4f5f6;
 }
 
 .nav-button:disabled {
+  background-color: #d7dadd;
   pointer-events: none;
+}
+
+.nav-button:disabled .nav-button-icon {
+  fill: #9a9ca5;
 }
 
 .mode-btn {
@@ -1106,17 +1093,17 @@ button {
   z-index: -1;
 }
 
-.step .step__number--active {
-  color: #ff5a30;
-  background-color: #ffdbd2;
-  border: 16px solid #fff4f1;
-}
-
 .step .step__dashed-line {
   display: inline-block;
   width: 205px;
   height: 18px;
   border-top: 1px dashed #d7dadd;
+}
+
+.step:hover .step__number {
+  color: #ff5a30;
+  background-color: #ffdbd2;
+  border: 16px solid #fff4f1;
 }
 
 .table__row {
@@ -1602,6 +1589,8 @@ button {
 
 .select__control {
   width: 100%;
+  font-size: 16px;
+  line-height: 160%;
   color: #424551;
   display: flex;
   justify-content: space-between;
@@ -1634,8 +1623,8 @@ button {
   top: 100%;
   left: 0;
   z-index: 1000;
-  background-color: #f4f5f6;
-  border: 1px solid #d7dadd;
+  background-color: #e5e8ed;
+  border: 1px solid #9a9ca5;
   border-radius: 4px;
   padding: 4px;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
@@ -1649,7 +1638,7 @@ button {
   color: #424551;
   text-align: start;
   background-color: #f4f5f6;
-  border: 1px solid #d7dadd;
+  border: 1px solid #9a9ca5;
   border-radius: 4px;
   padding: 13px 16px;
   cursor: pointer;
@@ -1779,12 +1768,7 @@ button {
 .potrfolio__top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-}
-
-.potrfolio__top div {
-  position: relative;
-  transform: translate(12px, 12px);
+  align-items: end;
 }
 
 .portfolio__slider {
@@ -3673,10 +3657,19 @@ button {
 
   .select__control {
     width: 260px;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 11px 16px;
   }
 
   .select__dropdown {
     width: 260px;
+  }
+
+  .select__dropdown .select__option {
+    font-size: 14px;
+    line-height: 150%;
+    padding: 11px 16px;
   }
 
   .portfolio--extratop-padding {
@@ -3862,7 +3855,7 @@ button {
     gap: 40px 0;
     padding-top: 10vh;
     padding-bottom: 20vh;
-    background-color: #fff;
+    background-color: #f4f5f6;
     position: absolute;
     top: 83px;
     left: -55%;
@@ -4063,5 +4056,17 @@ button {
   .textarea-block {
     font-size: 12px;
     line-height: 150%;
+  }
+
+  .select__control {
+    font-size: 12px;
+    line-height: 150%;
+    padding: 9px 16px;
+  }
+
+  .select__dropdown .select__option {
+    font-size: 12px;
+    line-height: 150%;
+    padding: 9px 16px;
   }
 }
