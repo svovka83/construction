@@ -92,10 +92,27 @@
 
 							<!-- dropdown -->
 							<!-- prettier-ignore -->
-							<div class="input-block input-block input-block--base">
-	<label class="label" for="interests-contact">I am interested in</label>
-	<input class="input input input--base input--width-100 input--dropdown input--dropdown-placeholder" type="@@type" id="interests-contact" placeholder="Interior Design" />
-	<p class="text-success text-success">Here is noothing. Opps.</p>
+							<div class="select">
+	<label class="select__label">I am interested in</label>
+	<div class="select__wrapper">
+		<button type="button" class="select__control">
+			<span class="select__value">Interior Design</span>
+			<svg class="select__chevron">
+				<use xlink:href="./img/sprites/mark.svg#chevron-down"></use>
+			</svg>
+		</button>
+		<div class="select__dropdown" id="@@dropdownList">
+			<button type="button" class="select__option value-1">
+				<span class="select__value">Interior Design</span>
+			</button>
+			<button type="button" class="select__option value-2">
+				<span class="select__value">Learning English</span>
+			</button>
+			<button type="button" class="select__option value-3">
+				<span class="select__value">Programming</span>
+			</button>
+		</div>
+	</div>
 </div>
 
 							<!-- input -->
@@ -108,10 +125,27 @@
 
 							<!-- dropdown -->
 							<!-- prettier-ignore -->
-							<div class="input-block input-block input-block--base">
-	<label class="label" for="location-contact">Location*</label>
-	<input class="input input input--base input--width-100 input--dropdown input--dropdown-placeholder" type="@@type" id="location-contact" placeholder="New York" />
-	<p class="text-success text-success">Here is noothing. Opps.</p>
+							<div class="select">
+	<label class="select__label">Location*</label>
+	<div class="select__wrapper">
+		<button type="button" class="select__control">
+			<span class="select__value">New York</span>
+			<svg class="select__chevron">
+				<use xlink:href="./img/sprites/mark.svg#chevron-down"></use>
+			</svg>
+		</button>
+		<div class="select__dropdown" id="@@dropdownList">
+			<button type="button" class="select__option value-1">
+				<span class="select__value">New York</span>
+			</button>
+			<button type="button" class="select__option value-2">
+				<span class="select__value">London</span>
+			</button>
+			<button type="button" class="select__option value-3">
+				<span class="select__value">Ipswich</span>
+			</button>
+		</div>
+	</div>
 </div>
 
 							<!-- input -->
@@ -227,29 +261,39 @@
 					<!-- prettier-ignore -->
 					<ul class="social-list social-list--office">
 	<li class="social-item">
-		<svg class="social-icon social-icon--office">
-			<use xlink:href="./img/sprites/socials.svg#whatsapp"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon social-icon--office">
+				<use xlink:href="./img/sprites/socials.svg#whatsapp"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon social-icon--office">
-			<use xlink:href="./img/sprites/socials.svg#msessanger"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon social-icon--office">
+				<use xlink:href="./img/sprites/socials.svg#msessanger"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon social-icon--office">
-			<use xlink:href="./img/sprites/socials.svg#facebook"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon social-icon--office">
+				<use xlink:href="./img/sprites/socials.svg#facebook"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon social-icon--office">
-			<use xlink:href="./img/sprites/socials.svg#twitter"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon social-icon--office">
+				<use xlink:href="./img/sprites/socials.svg#twitter"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon social-icon--office">
-			<use xlink:href="./img/sprites/socials.svg#youtube"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon social-icon--office">
+				<use xlink:href="./img/sprites/socials.svg#youtube"></use>
+			</svg>
+		</a>
 	</li>
 </ul>
 
@@ -268,29 +312,39 @@
 					</a>
 					<ul class="social-list @@classList">
 	<li class="social-item">
-		<svg class="social-icon @@classIcon">
-			<use xlink:href="./img/sprites/socials.svg#whatsapp"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon @@classIcon">
+				<use xlink:href="./img/sprites/socials.svg#whatsapp"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon @@classIcon">
-			<use xlink:href="./img/sprites/socials.svg#msessanger"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon @@classIcon">
+				<use xlink:href="./img/sprites/socials.svg#msessanger"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon @@classIcon">
-			<use xlink:href="./img/sprites/socials.svg#facebook"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon @@classIcon">
+				<use xlink:href="./img/sprites/socials.svg#facebook"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon @@classIcon">
-			<use xlink:href="./img/sprites/socials.svg#twitter"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon @@classIcon">
+				<use xlink:href="./img/sprites/socials.svg#twitter"></use>
+			</svg>
+		</a>
 	</li>
 	<li class="social-item">
-		<svg class="social-icon @@classIcon">
-			<use xlink:href="./img/sprites/socials.svg#youtube"></use>
-		</svg>
+		<a class="social-link" href="#!">
+			<svg class="social-icon @@classIcon">
+				<use xlink:href="./img/sprites/socials.svg#youtube"></use>
+			</svg>
+		</a>
 	</li>
 </ul>
 
