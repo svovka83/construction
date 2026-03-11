@@ -1,5 +1,8 @@
 .nav-buttons-block {
 	display: flex;
+	@media (max-width: 820px) {
+		display: none;
+	}
 }
 
 .nav-button {
@@ -9,46 +12,26 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&--left {
-		&:hover path {
-			fill: $white;
-		}
-		&:hover {
-			background-color: $primary;
-		}
-		&:active {
-			background-color: $primary-hover;
-		}
-		&:disabled path {
+	cursor: pointer;
+	.nav-button-icon {
+		width: 24px;
+		height: 24px;
+		fill: $gray-800;
+	}
+	&:hover {
+		background-color: $primary;
+		.nav-button-icon {
 			fill: $white;
 		}
 	}
-	&--right {
-		&:hover path {
-			fill: $white;
-		}
-		&:hover {
-			background-color: $primary;
-		}
-		&:active {
-			background-color: $primary-hover;
-		}
-		&:disabled path {
-			fill: $white;
-		}
-	}
-	&--transperant {
-		&:disabled path {
-			fill: $gray-200;
-		}
+	&:active {
+		background-color: $primary-hover;
 	}
 	&:disabled {
+		background-color: $gray-400;
 		pointer-events: none;
-	}
-}
-
-@media (max-width: 820px) {
-	.nav-buttons-block {
-		display: none;
+		.nav-button-icon {
+			fill: $gray-600;
+		}
 	}
 }

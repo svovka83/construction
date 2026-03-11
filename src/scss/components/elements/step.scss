@@ -15,16 +15,18 @@
 		translate: (-33px -2px);
 		position: relative;
 		z-index: -1;
-		&--active {
-			color: $primary;
-			background-color: #ffdbd2;
-			border: 16px solid #fff4f1;
-		}
 	}
 	.step__dashed-line {
 		display: inline-block;
 		width: 205px;
 		height: 18px;
 		border-top: 1px dashed $gray-400;
+	}
+	&:hover {
+		.step__number {
+			color: $primary;
+			background-color: #ffdbd2;
+			border: 16px solid #fff4f1;
+		}
 	}
 }

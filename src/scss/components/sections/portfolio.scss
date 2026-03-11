@@ -18,11 +18,7 @@
 .potrfolio__top {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
-	div {
-		position: relative;
-		transform: translate(12px, 12px);
-	}
+	align-items: end;
 }
 
 .portfolio__slider {
