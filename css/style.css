@@ -345,10 +345,6 @@ button {
   overflow: hidden;
 }
 
-.swiper-slide {
-  box-sizing: border-box;
-}
-
 .title {
   color: #1e212c;
 }
@@ -1643,6 +1639,10 @@ button {
   border-radius: 4px;
   padding: 4px;
   box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.select__dropdown--open {
+  display: flex;
 }
 
 .select__dropdown .select__option {

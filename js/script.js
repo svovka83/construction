@@ -1,106 +1,3 @@
-// burger-menu
-
-const menuBtn = document.querySelector(".burger-menu");
-const menuList = document.querySelector(".menu");
-
-menuBtn.addEventListener("click", () => {
-	menuList.classList.toggle("active");
-});
-
-// page location highlight text
-
-const links = document.querySelectorAll(".menu .menu__item > a");
-
-links.forEach((link) => {
-	if (link.href === window.location.href) {
-		link.classList.add("active-link");
-	}
-});
-
-// dropdown for contacts
-
-const dropControls = document.querySelectorAll(".select__control");
-const dropLists = document.querySelectorAll(".select__dropdown");
-const selectChevrons = document.querySelectorAll(".select__chevron");
-const selected = document.querySelectorAll(".select__value");
-const selected1 = document.querySelectorAll(".select__option.value-1");
-const selected2 = document.querySelectorAll(".select__option.value-2");
-const selected3 = document.querySelectorAll(".select__option.value-3");
-
-dropControls[0].addEventListener("click", () => {
-	if (dropLists[0].style.display === "flex") {
-		dropLists[0].style.display = "none";
-	} else {
-		dropLists[0].style.display = "flex";
-	}
-	selectChevrons[0].classList.toggle("select__chevron--open");
-});
-
-selected1[0].addEventListener("click", () => {
-	selected[0].textContent = selected1[0].textContent;
-	dropLists[0].style.display = "none";
-	selectChevrons[0].classList.remove("select__chevron--open");
-});
-selected2[0].addEventListener("click", () => {
-	selected[0].textContent = selected2[0].textContent;
-	dropLists[0].style.display = "none";
-	selectChevrons[0].classList.remove("select__chevron--open");
-});
-selected3[0].addEventListener("click", () => {
-	selected[0].textContent = selected3[0].textContent;
-	dropLists[0].style.display = "none";
-	selectChevrons[0].classList.remove("select__chevron--open");
-});
-
-dropControls[1].addEventListener("click", () => {
-	if (dropLists[1].style.display === "flex") {
-		dropLists[1].style.display = "none";
-	} else {
-		dropLists[1].style.display = "flex";
-	}
-	selectChevrons[1].classList.toggle("select__chevron--open");
-});
-
-selected1[1].addEventListener("click", () => {
-	selected[4].textContent = selected1[1].textContent;
-	dropLists[1].style.display = "none";
-	selectChevrons[1].classList.remove("select__chevron--open");
-});
-selected2[1].addEventListener("click", () => {
-	selected[4].textContent = selected2[1].textContent;
-	dropLists[1].style.display = "none";
-	selectChevrons[1].classList.remove("select__chevron--open");
-});
-selected3[1].addEventListener("click", () => {
-	selected[4].textContent = selected3[1].textContent;
-	dropLists[1].style.display = "none";
-	selectChevrons[1].classList.remove("select__chevron--open");
-});
-
-// modal
-
-const subscribeBtn = document.getElementById("modal-subscribe");
-const sendBtn = document.getElementById("modal-send");
-
-const subscribeModal = document.querySelector(".modal-subscribe");
-const sendModal = document.querySelector(".modal-send");
-
-const cloeseBtn = document.querySelectorAll(".modal__close");
-
-subscribeBtn.addEventListener("click", () => {
-	subscribeModal.style.display = "block";
-});
-sendBtn.addEventListener("click", () => {
-	sendModal.style.display = "block";
-});
-
-cloeseBtn[0].addEventListener("click", () => {
-	subscribeModal.style.display = "none";
-});
-cloeseBtn[1].addEventListener("click", () => {
-	sendModal.style.display = "none";
-});
-
 // hero-slider
 
 new Swiper(".hero-swiper", {
@@ -252,4 +149,135 @@ trigger.forEach((btn) => {
 		btn.parentElement.classList.toggle("text-hidden");
 		btn.querySelector(".accordion__plus").classList.toggle("plus");
 	});
+});
+
+// burger-menu
+
+const menuBtn = document.querySelector(".burger-menu");
+const menuList = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+	menuList.classList.toggle("active");
+});
+
+// page location highlight text
+
+const links = document.querySelectorAll(".menu .menu__item > a");
+
+links.forEach((link) => {
+	if (link.href === window.location.href) {
+		link.classList.add("active-link");
+	}
+});
+
+// dropdown for contacts
+
+// const dropControls = document.querySelectorAll(".select__control");
+// const dropLists = document.querySelectorAll(".select__dropdown");
+// const selectChevrons = document.querySelectorAll(".select__chevron");
+// const selected = document.querySelectorAll(".select__value");
+// const selected1 = document.querySelectorAll(".select__option.value-1");
+// const selected2 = document.querySelectorAll(".select__option.value-2");
+// const selected3 = document.querySelectorAll(".select__option.value-3");
+
+// dropControls[0].addEventListener("click", () => {
+// 	if (dropLists[0].style.display === "flex") {
+// 		dropLists[0].style.display = "none";
+// 	} else {
+// 		dropLists[0].style.display = "flex";
+// 	}
+// 	selectChevrons[0].classList.toggle("select__chevron--open");
+// });
+
+// selected1[0].addEventListener("click", () => {
+// 	selected[0].textContent = selected1[0].textContent;
+// 	dropLists[0].style.display = "none";
+// 	selectChevrons[0].classList.remove("select__chevron--open");
+// });
+// selected2[0].addEventListener("click", () => {
+// 	selected[0].textContent = selected2[0].textContent;
+// 	dropLists[0].style.display = "none";
+// 	selectChevrons[0].classList.remove("select__chevron--open");
+// });
+// selected3[0].addEventListener("click", () => {
+// 	selected[0].textContent = selected3[0].textContent;
+// 	dropLists[0].style.display = "none";
+// 	selectChevrons[0].classList.remove("select__chevron--open");
+// });
+
+// dropControls[1].addEventListener("click", () => {
+// 	if (dropLists[1].style.display === "flex") {
+// 		dropLists[1].style.display = "none";
+// 	} else {
+// 		dropLists[1].style.display = "flex";
+// 	}
+// 	selectChevrons[1].classList.toggle("select__chevron--open");
+// });
+
+// selected1[1].addEventListener("click", () => {
+// 	selected[4].textContent = selected1[1].textContent;
+// 	dropLists[1].style.display = "none";
+// 	selectChevrons[1].classList.remove("select__chevron--open");
+// });
+// selected2[1].addEventListener("click", () => {
+// 	selected[4].textContent = selected2[1].textContent;
+// 	dropLists[1].style.display = "none";
+// 	selectChevrons[1].classList.remove("select__chevron--open");
+// });
+// selected3[1].addEventListener("click", () => {
+// 	selected[4].textContent = selected3[1].textContent;
+// 	dropLists[1].style.display = "none";
+// 	selectChevrons[1].classList.remove("select__chevron--open");
+// });
+
+// dropdown for contacts  from gpt
+
+const selects = document.querySelectorAll(".select");
+
+selects.forEach((select) => {
+	const control = select.querySelector(".select__control");
+	const dropdown = select.querySelector(".select__dropdown");
+	const chevron = select.querySelector(".select__chevron");
+	const value = select.querySelector(".select__value");
+	const options = select.querySelectorAll(".select__option");
+
+	// відкриття / закриття
+	control.addEventListener("click", () => {
+		dropdown.classList.toggle("select__dropdown--open");
+		chevron.classList.toggle("select__chevron--open");
+	});
+
+	// вибір значення
+	options.forEach((option) => {
+		option.addEventListener("click", () => {
+			value.textContent = option.textContent;
+
+			dropdown.classList.remove("select__dropdown--open");
+			chevron.classList.remove("select__chevron--open");
+		});
+	});
+});
+
+// modal
+
+const subscribeBtn = document.getElementById("modal-subscribe");
+const sendBtn = document.getElementById("modal-send");
+
+const subscribeModal = document.querySelector(".modal-subscribe");
+const sendModal = document.querySelector(".modal-send");
+
+const closeBtn = document.querySelectorAll(".modal__close");
+
+subscribeBtn.addEventListener("click", () => {
+	subscribeModal.style.display = "block";
+});
+sendBtn.addEventListener("click", () => {
+	sendModal.style.display = "block";
+});
+
+closeBtn[0].addEventListener("click", () => {
+	subscribeModal.style.display = "none";
+});
+closeBtn[1].addEventListener("click", () => {
+	sendModal.style.display = "none";
 });
