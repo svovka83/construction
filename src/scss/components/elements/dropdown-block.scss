@@ -59,6 +59,9 @@
 	border-radius: 4px;
 	padding: 4px;
 	box-shadow: $box-shadow-start, $box-shadow-end, $box-shadow-third, $box-shadow-fourth;
+	&--open {
+		display: flex;
+	}
 	@media (max-width: 830px) {
 		width: 390px;
 	}

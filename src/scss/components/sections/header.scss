@@ -20,6 +20,10 @@
 	padding-bottom: 22px;
 	position: relative;
 	z-index: 100;
+	@media (max-width: 1078px) {
+		flex-wrap: wrap;
+		gap: 22px 0;
+	}
 }
 
 .logo {
@@ -29,6 +33,26 @@
 .menu {
 	display: flex;
 	gap: 0 41px;
+	@media (max-width: 1078px) {
+		order: 1;
+		margin: 0 auto;
+	}
+	@media (max-width: 650px) {
+		width: 90vw;
+		height: 100vh;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px 0;
+		padding-top: 10vh;
+		padding-bottom: 20vh;
+		background-color: $white;
+		position: absolute;
+		top: 83px;
+		left: -55%;
+		transform: translate(-50%, 0);
+		transition: left 0.4s ease-in-out;
+		z-index: 100;
+	}
 	.menu__link {
 		@extend %tmpUbuntu-700-regular;
 		color: $gray-800;
@@ -46,73 +70,44 @@
 	gap: 0 36px;
 	margin-left: auto;
 	margin-right: 0;
+	@media (max-width: 650px) {
+		gap: 0;
+	}
 	.call__block {
 		display: flex;
 		align-items: center;
 		.call__icon {
 			margin-right: 12px;
+			@media (max-width: 650px) {
+				margin-right: 24px;
+			}
 		}
 		.call__title {
 			@extend %tmpUbuntu-700-small;
 			color: $gray-800;
+			@media (max-width: 650px) {
+				display: none;
+			}
 		}
 		.call__text {
 			@extend %tmpUbuntu-400-large;
 			color: $gray-900;
+			@media (max-width: 650px) {
+				display: none;
+			}
 		}
 	}
 }
 
 .burger-menu {
 	display: none;
-}
-
-@media (max-width: 1078px) {
-	.header-inner {
-		flex-wrap: wrap;
-		gap: 22px 0;
-	}
-
-	.menu {
-		order: 1;
-		margin: 0 auto;
+	@media (max-width: 650px) {
+		display: inline-block;
 	}
 }
 
 @media (max-width: 650px) {
-	.call {
-		gap: 0;
-		.call__block {
-			.call__icon {
-				margin-right: 24px;
-			}
-			.call__title {
-				display: none;
-			}
-			.call__text {
-				display: none;
-			}
-		}
-	}
-
-	.menu {
-		flex-direction: column;
-		gap: 20px 0;
-		padding: 30px 155px;
-		background-color: $white;
-		position: absolute;
-		top: 83px;
-		left: -55%;
-		transform: translate(-50%, 0);
-		transition: left 0.4s ease-in-out;
-		z-index: 100;
-	}
-
 	.menu.active {
 		left: 50vw;
-	}
-
-	.burger-menu {
-		display: inline-block;
 	}
 }
