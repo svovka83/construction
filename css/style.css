@@ -3854,6 +3854,19 @@ button {
 }
 
 @media (max-width: 650px) {
+  .menu {
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 30px 155px;
+    background-color: #fff;
+    position: absolute;
+    top: 83px;
+    left: -55%;
+    transform: translate(-50%, 0);
+    transition: left 0.4s ease-in-out;
+    z-index: 100;
+  }
+
   .call {
     gap: 0;
   }
@@ -3870,25 +3883,12 @@ button {
     display: none;
   }
 
-  .menu {
-    flex-direction: column;
-    gap: 20px 0;
-    padding: 30px 155px;
-    background-color: #fff;
-    position: absolute;
-    top: 83px;
-    left: -55%;
-    transform: translate(-50%, 0);
-    transition: left 0.4s ease-in-out;
-    z-index: 100;
+  .burger-menu {
+    display: inline-block;
   }
 
   .menu.active {
     left: 50vw;
-  }
-
-  .burger-menu {
-    display: inline-block;
   }
 
   .top {

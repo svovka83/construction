@@ -1,3 +1,31 @@
+// burger-menu
+
+const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+
+const menuBtn = document.querySelector(".burger-menu");
+const menuList = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", () => {
+	if (!menuList.classList.contains("active")) {
+		menuList.classList.add("active");
+		disableBodyScroll(document.body);
+	} else {
+		menuList.classList.remove("active");
+		enableBodyScroll(document.body);
+	}
+});
+
+// page location highlight text
+
+const links = document.querySelectorAll(".menu .menu__item > a");
+
+links.forEach((link) => {
+	if (link.href === window.location.href) {
+		link.classList.add("active-link");
+	}
+});
+
 // hero-slider
 
 new Swiper(".hero-swiper", {
@@ -149,25 +177,6 @@ trigger.forEach((btn) => {
 		btn.parentElement.classList.toggle("text-hidden");
 		btn.querySelector(".accordion__plus").classList.toggle("plus");
 	});
-});
-
-// burger-menu
-
-const menuBtn = document.querySelector(".burger-menu");
-const menuList = document.querySelector(".menu");
-
-menuBtn.addEventListener("click", () => {
-	menuList.classList.toggle("active");
-});
-
-// page location highlight text
-
-const links = document.querySelectorAll(".menu .menu__item > a");
-
-links.forEach((link) => {
-	if (link.href === window.location.href) {
-		link.classList.add("active-link");
-	}
 });
 
 // dropdown for contacts
