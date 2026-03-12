@@ -2486,7 +2486,7 @@ button {
 
 .pricing-clients__bg {
   position: absolute;
-  top: 0;
+  top: -79px;
   left: 0;
 }
 
@@ -3202,6 +3202,13 @@ button {
 }
 
 @media (max-width: 1200px) {
+  .offers {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 0;
+    margin-bottom: 120px;
+  }
+
   .vacancies-cta-benefits {
     padding-top: 0;
     padding-bottom: 90px;
@@ -3219,11 +3226,6 @@ button {
 }
 
 @media (max-width: 1178px) {
-  .offers {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
   .offers .offers__content {
     height: unset;
   }
@@ -3285,6 +3287,31 @@ button {
 }
 
 @media (max-width: 1080px) {
+  .menu {
+    width: 90vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0;
+    padding-top: 8vh;
+    padding-bottom: 20vh;
+    background-color: #f4f5f6;
+    position: absolute;
+    top: 83px;
+    left: -55%;
+    transform: translate(-50%, 0);
+    transition: left 0.4s ease-in-out;
+    z-index: 100;
+  }
+
+  .burger-menu {
+    display: inline-block;
+  }
+
+  .menu.active {
+    left: 50vw;
+  }
+
   .top__bg--news {
     width: 100%;
     height: 600px;
@@ -3293,41 +3320,6 @@ button {
 }
 
 @media (max-width: 1078px) {
-  .header-inner {
-    flex-wrap: wrap;
-    gap: 22px 0;
-  }
-
-  .menu {
-    order: 1;
-    margin: 0 auto;
-  }
-
-  .top {
-    transform: translateY(-140px);
-  }
-
-  .construction {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .constructions {
-    padding-top: 0;
-    margin-top: -50px;
-    padding-bottom: 120px;
-  }
-
-  .constructions__inner {
-    gap: 60px 0;
-  }
-
-  .offers {
-    padding-top: 0;
-    margin-top: -28px;
-    margin-bottom: 120px;
-  }
-
   .statistics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -3366,6 +3358,15 @@ button {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     row-gap: 30px;
+  }
+
+  .construction {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .constructions__inner {
+    gap: 60px 0;
   }
 
   .history-slider-block {
@@ -3674,6 +3675,22 @@ button {
     padding: 11px 16px;
   }
 
+  .call {
+    gap: 0;
+  }
+
+  .call .call__block .call__icon {
+    margin-right: 24px;
+  }
+
+  .call .call__block .call__title {
+    display: none;
+  }
+
+  .call .call__block .call__text {
+    display: none;
+  }
+
   .portfolio--extratop-padding {
     padding-top: 80px;
   }
@@ -3735,7 +3752,7 @@ button {
 
   .hero-slider__content {
     max-width: 548px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
   }
 
   .hero-slider__content .hero-slider__title {
@@ -3770,6 +3787,11 @@ button {
 
   .request-form__content div:nth-child(3) > input {
     width: 260px;
+  }
+
+  .constructions {
+    padding-top: 0;
+    padding-bottom: 120px;
   }
 
   .offers .offers__img {
@@ -3849,55 +3871,6 @@ button {
 }
 
 @media (max-width: 650px) {
-  .menu {
-    width: 90vw;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px 0;
-    padding-top: 10vh;
-    padding-bottom: 20vh;
-    background-color: #f4f5f6;
-    position: absolute;
-    top: 83px;
-    left: -55%;
-    transform: translate(-50%, 0);
-    transition: left 0.4s ease-in-out;
-    z-index: 100;
-  }
-
-  .call {
-    gap: 0;
-  }
-
-  .call .call__block .call__icon {
-    margin-right: 24px;
-  }
-
-  .call .call__block .call__title {
-    display: none;
-  }
-
-  .call .call__block .call__text {
-    display: none;
-  }
-
-  .burger-menu {
-    display: inline-block;
-  }
-
-  .menu.active {
-    left: 50vw;
-  }
-
-  .top {
-    transform: translateY(-84px);
-  }
-
-  .constructions {
-    margin-top: 0;
-  }
-
   .pricing-clients__bg {
     left: -260px;
   }
