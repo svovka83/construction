@@ -2,6 +2,9 @@
 	max-width: 1920px;
 	position: relative;
 	padding-top: 220px;
+	@media (max-width: 768px) {
+		padding-top: 120px;
+	}
 }
 
 .hero-slider__bg-img {
@@ -11,11 +14,18 @@
 	object-fit: cover;
 	inset: 0;
 	z-index: -1;
+	@media (max-width: 768px) {
+		min-height: 650px;
+	}
 }
 
 .hero-slider__content {
 	max-width: 596px;
 	margin-bottom: 179px;
+	@media (max-width: 768px) {
+		max-width: 548px;
+		margin-bottom: 120px;
+	}
 	.hero-slider__title {
 		@extend %tmpUbuntu-700;
 		font-size: 72px;
@@ -64,6 +74,9 @@
 		opacity: 0.5;
 		pointer-events: none;
 	}
+	@media (max-width: 1440px) {
+		display: none;
+	}
 }
 
 .swiper-pagination-bullet {
@@ -74,22 +87,8 @@
 	background-color: transparent;
 }
 
-@media (max-width: 1440px) {
-	.hero-slider__navBtn {
-		display: none;
-	}
-}
-
 @media (max-width: 768px) {
-	.hero-slider {
-		padding-top: 120px;
-	}
-	.hero-slider__bg-img {
-		min-height: 650px;
-	}
 	.hero-slider__content {
-		max-width: 548px;
-		margin-bottom: 100px;
 		.hero-slider__title {
 			font-size: clamp(42px, 10vw, 72px);
 		}

@@ -6,7 +6,7 @@
 	&--reverse {
 		flex-direction: row-reverse;
 	}
-	@media (max-width: 1078px) {
+	@media (max-width: 1024px) {
 		flex-direction: column;
 		gap: 30px;
 	}
